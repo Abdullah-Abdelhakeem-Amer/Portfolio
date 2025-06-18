@@ -1,0 +1,22 @@
+# Temporary QNX Systems Image Placeholder
+# This is a placeholder for QNX RTOS service images
+# 
+# Recommended image specifications:
+# - Size: 1200x800 pixels
+# - Format: JPG or PNG
+# - Content: Real-time system graphs, safety-critical interfaces, or QNX development environment
+# 
+# Replace this file with actual QNX project images:
+# - QNX Momentics IDE screenshots
+# - Real-time performance metrics
+# - Safety-critical system interfaces
+# - ADAS system demonstrations
+# 
+# For now, you can use a stock image from:
+# - Unsplash.com (search: "real time systems automotive")
+# - Pexels.com (search: "automotive safety technology")
+# - Or create a graphic with QNX branding + automotive safety elements
+
+# Temporary CSS background for development:
+# background: linear-gradient(135deg, #0066CC 0%, #003366 100%);
+# This creates a QNX-themed gradient background 

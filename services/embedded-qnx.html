@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Embedded QNX development services for safety-critical automotive applications, real-time systems, and ISO 26262 compliant solutions.">
+    <meta name="keywords" content="QNX RTOS, real-time systems, safety critical, automotive QNX, ISO 26262, embedded systems">
+    <meta name="author" content="Abdullah Abdelhakeem">
+    
+    <title>Embedded QNX Development Services - Abdullah Abdelhakeem</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <span class="brand-text">Abdullah<span class="brand-accent">.</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#services" class="nav-link active">Services</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../podcasts/" class="nav-link">Podcasts</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero section">
+        <div class="container">
+            <div class="service-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#services">Services</a>
+                    <span>/</span>
+                    <span>Embedded QNX</span>
+                </div>
+                
+                <div class="service-hero-main">
+                    <div class="service-icon-large">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h1 class="service-title">Embedded QNX Development</h1>
+                    <p class="service-subtitle">
+                        Safety-critical real-time systems development using QNX RTOS for automotive and industrial applications
+                    </p>
+                </div>
+                
+                <div class="service-stats">
+                    <div class="stat">
+                        <span class="stat-number">ASIL-D</span>
+                        <span class="stat-label">Safety Certified</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">< 1μs</span>
+                        <span class="stat-label">Jitter</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.999%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview section">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Mission-Critical QNX Solutions</h2>
+                    <p>
+                        Specialized in developing safety-critical real-time systems using QNX RTOS for automotive 
+                        applications. With expertise in ISO 26262 functional safety standards and ASIL compliance, 
+                        I deliver robust QNX solutions for demanding automotive environments.
+                    </p>
+                    <p>
+                        From ADAS systems to autonomous driving platforms, I provide comprehensive QNX development 
+                        services that meet the highest safety and performance standards required in modern vehicles.
+                    </p>
+                </div>
+                
+                <div class="overview-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety Certified</h3>
+                        <p>ISO 26262 ASIL-D certified development with functional safety compliance</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-stopwatch"></i>
+                        <h3>Hard Real-time</h3>
+                        <p>Deterministic response times with microsecond precision for critical tasks</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Microkernel Architecture</h3>
+                        <p>Fault isolation and system reliability through QNX's microkernel design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Standards -->
+    <section class="safety-standards section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Safety & Compliance</h2>
+                <p class="section-subtitle">Meeting automotive industry safety standards</p>
+            </div>
+            
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>ISO 26262</h3>
+                    <p>Functional Safety Standard</p>
+                    <div class="asil-levels">
+                        <span class="asil-badge asil-a">ASIL-A</span>
+                        <span class="asil-badge asil-b">ASIL-B</span>
+                        <span class="asil-badge asil-c">ASIL-C</span>
+                        <span class="asil-badge asil-d">ASIL-D</span>
+                    </div>
+                </div>
+                
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Common Criteria</h3>
+                    <p>Security Evaluation Standard</p>
+                    <div class="cc-levels">
+                        <span class="cc-badge">EAL4+</span>
+                        <span class="cc-badge">CC Certified</span>
+                    </div>
+                </div>
+                
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>AUTOSAR</h3>
+                    <p>Automotive Software Architecture</p>
+                    <div class="autosar-versions">
+                        <span class="autosar-badge">Classic</span>
+                        <span class="autosar-badge">Adaptive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise -->
+    <section class="technical-expertise section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">QNX Technical Expertise</h2>
+                <p class="section-subtitle">Comprehensive QNX RTOS development capabilities</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-kernel"></i>
+                    </div>
+                    <h3>QNX Kernel Development</h3>
+                    <ul>
+                        <li>Microkernel message passing optimization</li>
+                        <li>Resource managers and device drivers</li>
+                        <li>Interrupt handling and scheduling</li>
+                        <li>Memory management and protection</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>System Architecture</h3>
+                    <ul>
+                        <li>Multi-core and SMP system design</li>
+                        <li>Process and thread management</li>
+                        <li>Inter-process communication (IPC)</li>
+                        <li>Distributed system development</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Real-time Optimization</h3>
+                    <ul>
+                        <li>Priority inheritance and scheduling</li>
+                        <li>Adaptive partitioning scheduler</li>
+                        <li>Clock and timer management</li>
+                        <li>System profiling and optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Safety & Security</h3>
+                    <ul>
+                        <li>Fault isolation and recovery</li>
+                        <li>Watchdog and health monitoring</li>
+                        <li>Secure boot and code signing</li>
+                        <li>Cryptographic services integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QNX Components -->
+    <section class="qnx-components section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">QNX System Components</h2>
+                <p class="section-subtitle">Comprehensive QNX ecosystem expertise</p>
+            </div>
+            
+            <div class="components-diagram">
+                <div class="component-layer layer-applications">
+                    <h3>Applications Layer</h3>
+                    <div class="component-items">
+                        <span class="component-item">HMI Applications</span>
+                        <span class="component-item">ADAS Components</span>
+                        <span class="component-item">Diagnostics</span>
+                        <span class="component-item">Custom Apps</span>
+                    </div>
+                </div>
+                
+                <div class="component-layer layer-middleware">
+                    <h3>Middleware & Services</h3>
+                    <div class="component-items">
+                        <span class="component-item">QNX CAR</span>
+                        <span class="component-item">Qt/HTML5</span>
+                        <span class="component-item">OpenGL ES</span>
+                        <span class="component-item">Audio/Video</span>
+                    </div>
+                </div>
+                
+                <div class="component-layer layer-os">
+                    <h3>QNX Operating System</h3>
+                    <div class="component-items">
+                        <span class="component-item">QNX Neutrino RTOS</span>
+                        <span class="component-item">Process Manager</span>
+                        <span class="component-item">Resource Managers</span>
+                        <span class="component-item">Device Drivers</span>
+                    </div>
+                </div>
+                
+                <div class="component-layer layer-hardware">
+                    <h3>Hardware Abstraction</h3>
+                    <div class="component-items">
+                        <span class="component-item">BSP</span>
+                        <span class="component-item">Startup</span>
+                        <span class="component-item">IPL</span>
+                        <span class="component-item">Hardware</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="performance-metrics section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Performance Characteristics</h2>
+                <p class="section-subtitle">QNX real-time performance benchmarks</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card major">
+                    <div class="metric-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="metric-value">< 2.5μs</div>
+                    <div class="metric-label">Interrupt Latency</div>
+                    <div class="metric-description">Worst-case interrupt response time</div>
+                </div>
+                
+                <div class="metric-card major">
+                    <div class="metric-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="metric-value">< 1μs</div>
+                    <div class="metric-label">Context Switch</div>
+                    <div class="metric-description">Thread context switching time</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">< 500ns</div>
+                    <div class="metric-label">Jitter</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">1000Hz</div>
+                    <div class="metric-label">Tick Rate</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">256</div>
+                    <div class="metric-label">Priority Levels</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">32 CPU</div>
+                    <div class="metric-label">SMP Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automotive Applications -->
+    <section class="automotive-applications section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Automotive Applications</h2>
+                <p class="section-subtitle">QNX solutions for modern vehicle systems</p>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>ADAS Systems</h3>
+                    <p>Advanced Driver Assistance Systems with real-time sensor fusion and decision making</p>
+                    <div class="application-features">
+                        <span class="feature-tag">Camera Processing</span>
+                        <span class="feature-tag">Radar/LiDAR</span>
+                        <span class="feature-tag">Sensor Fusion</span>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Autonomous Driving</h3>
+                    <p>Level 2-4 autonomous driving platforms with safety-critical path planning</p>
+                    <div class="application-features">
+                        <span class="feature-tag">Path Planning</span>
+                        <span class="feature-tag">Control Systems</span>
+                        <span class="feature-tag">Safety Monitor</span>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-dashboard"></i>
+                    </div>
+                    <h3>Digital Cockpit</h3>
+                    <p>Multi-display cockpit systems with real-time instrument cluster and HMI</p>
+                    <div class="application-features">
+                        <span class="feature-tag">Multi-Display</span>
+                        <span class="feature-tag">Graphics</span>
+                        <span class="feature-tag">Voice/Gesture</span>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Telematics Gateway</h3>
+                    <p>Connected vehicle platforms with secure communication and data processing</p>
+                    <div class="application-features">
+                        <span class="feature-tag">V2X Communication</span>
+                        <span class="feature-tag">OTA Updates</span>
+                        <span class="feature-tag">Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Tools -->
+    <section class="development-tools section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Development Tools</h2>
+                <p class="section-subtitle">Professional QNX development environment</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <h3>QNX Development Suite</h3>
+                    <div class="tool-list">
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>QNX Momentics IDE</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-bug"></i>
+                            <span>QNX System Profiler</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Application Profiler</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-memory"></i>
+                            <span>Memory Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool-category">
+                    <h3>Testing & Validation</h3>
+                    <div class="tool-list">
+                        <div class="tool-item">
+                            <i class="fas fa-vial"></i>
+                            <span>Unit Testing Frameworks</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-stopwatch"></i>
+                            <span>Real-time Testing</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safety Testing Tools</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-microscope"></i>
+                            <span>Static Code Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="service-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Safety-Critical QNX Development?</h2>
+                <p>
+                    Let's discuss your safety-critical automotive project and create a QNX solution 
+                    that meets the highest standards of safety, security, and real-time performance.
+                </p>
+                <div class="cta-actions">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-comments"></i>
+                        Start Discussion
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-outline">
+                        <i class="fas fa-folder-open"></i>
+                        View Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abdullah Abdelhakeem</h3>
+                    <p>Senior QNX Developer specializing in safety-critical real-time systems for automotive applications.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./automotive-android.html">Automotive Android</a></li>
+                        <li><a href="./embedded-linux.html">Embedded Linux</a></li>
+                        <li><a href="./embedded-qnx.html">Embedded QNX</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../podcasts/">Podcasts</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> abdullah.abdelhakeem25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201060178099</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html> 

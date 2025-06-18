@@ -1,0 +1,248 @@
+{
+  "featured": [
+    {
+      "id": "autodash-pro",
+      "title": "AutoDash Pro",
+      "description": "Real-time vehicle dashboard application with CAN bus integration, featuring live telemetry display, performance metrics, and automotive-grade UI design.",
+      "category": "automotive",
+      "technologies": ["Android Automotive OS", "Kotlin", "CAN Bus", "Vehicle Property Manager", "Jetpack Compose"],
+      "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/autodash-pro",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=autodash-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "Real-time vehicle telemetry display",
+        "CAN bus message processing (1000+ messages/second)",
+        "60fps UI updates with <150MB memory usage",
+        "Automotive-grade safety compliance",
+        "Modern Material Design 3 interface"
+      ],
+      "challenges": [
+        "Real-time data processing optimization",
+        "Memory management for continuous operation",
+        "CAN bus integration and message parsing",
+        "Automotive display requirements compliance"
+      ],
+      "results": [
+        "Production-ready automotive dashboard",
+        "Zero-allocation real-time processing",
+        "Successfully deployed in test vehicles",
+        "Positive feedback from automotive engineers"
+      ]
+    },
+    {
+      "id": "autoivi-system",
+      "title": "AutoIVI Pro",
+      "description": "Comprehensive In-Vehicle Infotainment system with navigation, multi-zone audio management, and vehicle integration capabilities.",
+      "category": "automotive",
+      "technologies": ["Android Automotive OS", "Google Maps SDK", "ExoPlayer", "Vehicle HAL", "Speech Recognition"],
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/automotive-ivi-system",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=autoivi-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "Real-time GPS navigation with automotive-grade accuracy",
+        "Multi-zone audio management for different vehicle areas",
+        "Voice command integration with speech recognition",
+        "Vehicle system integration through HAL interfaces",
+        "Media playback with format support for automotive"
+      ],
+      "challenges": [
+        "Multi-zone audio synchronization",
+        "Real-time navigation performance",
+        "Vehicle system integration complexity",
+        "Voice recognition in automotive environment"
+      ],
+      "results": [
+        "Complete IVI solution for modern vehicles",
+        "Seamless integration with vehicle systems",
+        "High-performance navigation and media playback",
+        "Production-ready automotive interface"
+      ]
+    },
+    {
+      "id": "custom-tabletos",
+      "title": "CustomTabletOS",
+      "description": "AOSP-based locked-down operating system for educational and commercial tablet deployments with kiosk mode and centralized management.",
+      "category": "android",
+      "technologies": ["AOSP Android 14", "Custom Device Trees", "Device Policy Manager", "Kotlin", "Administrative Portal"],
+      "image": "https://images.unsplash.com/photo-1544890225-2f403640d912?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/aosp-custom-rom",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=tabletos-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "Custom AOSP build with security hardening",
+        "Kiosk mode for controlled application access",
+        "Centralized device management portal",
+        "Custom boot animation and branding",
+        "Enterprise-grade security policies"
+      ],
+      "challenges": [
+        "AOSP compilation and customization",
+        "Device policy implementation",
+        "Security hardening requirements",
+        "Multi-device management scalability"
+      ],
+      "results": [
+        "Production-ready custom Android OS",
+        "Successfully deployed in educational institutions",
+        "Reduced maintenance overhead by 60%",
+        "Enhanced security and device control"
+      ]
+    },
+    {
+      "id": "canbridge-diagnostics",
+      "title": "CANBridge Diagnostic Tool",
+      "description": "Professional automotive diagnostic suite supporting OBD-II and UDS protocols with real-time monitoring and advanced troubleshooting capabilities.",
+      "category": "automotive",
+      "technologies": ["Java", "CAN Bus", "OBD-II", "UDS Protocol", "Real-time Processing", "SQLite"],
+      "image": "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/canbridge-diagnostics",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=canbridge-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "OBD-II and UDS protocol support",
+        "Real-time vehicle parameter monitoring",
+        "Advanced diagnostic trouble code analysis",
+        "Historical data logging and analysis",
+        "Professional diagnostic reporting"
+      ],
+      "challenges": [
+        "Multiple diagnostic protocol implementation",
+        "Real-time data processing and visualization",
+        "Vehicle compatibility across different manufacturers",
+        "Professional-grade diagnostic accuracy"
+      ],
+      "results": [
+        "Comprehensive automotive diagnostic solution",
+        "Support for 50+ vehicle manufacturers",
+        "Used by automotive technicians and engineers",
+        "Reduced diagnostic time by 40%"
+      ]
+    },
+    {
+      "id": "securefleet-manager",
+      "title": "SecureFleet Manager",
+      "description": "Enterprise automotive security platform with HSM integration, fleet monitoring, and comprehensive cybersecurity for connected vehicles.",
+      "category": "automotive",
+      "technologies": ["Java", "HSM Integration", "Fleet Management", "Cybersecurity", "Real-time Monitoring", "REST APIs"],
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/securefleet-manager",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=securefleet-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "HSM-based security key management",
+        "Real-time fleet monitoring and alerts",
+        "Cybersecurity threat detection and response",
+        "Secure over-the-air update management",
+        "Compliance with automotive security standards"
+      ],
+      "challenges": [
+        "HSM integration complexity",
+        "Real-time security monitoring at scale",
+        "Automotive cybersecurity compliance",
+        "Secure communication protocols"
+      ],
+      "results": [
+        "Enterprise-grade automotive security platform",
+        "Zero security incidents in production",
+        "Manages 10,000+ connected vehicles",
+        "Automotive cybersecurity certification"
+      ]
+    },
+    {
+      "id": "vehicleos-aosp",
+      "title": "VehicleOS",
+      "description": "Custom AOSP automotive build optimized for performance, safety, and real-time operation with kernel-level optimizations.",
+      "category": "embedded",
+      "technologies": ["AOSP", "Linux Kernel", "Real-time Optimization", "Custom HAL", "Performance Tuning", "Safety Systems"],
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop&crop=center",
+      "github": "https://github.com/abdullah6484/Automotive_Android_Portfolio/tree/main/projects/vehicleos-aosp",
+      "demo": null,
+      "youtube": "https://youtube.com/watch?v=vehicleos-demo",
+      "status": "completed",
+      "year": "2024",
+      "features": [
+        "Custom AOSP build for automotive platforms",
+        "Real-time kernel optimizations",
+        "Custom HAL implementations",
+        "Performance monitoring and optimization",
+        "Safety-critical system compliance"
+      ],
+      "challenges": [
+        "AOSP automotive customization complexity",
+        "Real-time performance requirements",
+        "Safety system integration",
+        "Multi-platform hardware support"
+      ],
+      "results": [
+        "High-performance automotive OS",
+        "Real-time response under 5ms",
+        "Safety-certified for automotive use",
+        "Successfully deployed in prototype vehicles"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "count": 8
+    },
+    {
+      "id": "automotive",
+      "name": "Automotive",
+      "count": 5
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "count": 2
+    },
+    {
+      "id": "embedded",
+      "name": "Embedded",
+      "count": 3
+    }
+  ],
+  "technologies": [
+    "Android Automotive OS",
+    "AOSP",
+    "Kotlin",
+    "Java",
+    "C/C++",
+    "CAN Bus",
+    "Vehicle Property Manager",
+    "Jetpack Compose",
+    "Google Maps SDK",
+    "ExoPlayer",
+    "Vehicle HAL",
+    "Speech Recognition",
+    "Device Policy Manager",
+    "OBD-II",
+    "UDS Protocol",
+    "HSM Integration",
+    "Fleet Management",
+    "Cybersecurity",
+    "Linux Kernel",
+    "Real-time Systems",
+    "Safety Systems"
+  ],
+  "stats": {
+    "totalProjects": 8,
+    "completedProjects": 8,
+    "technologiesUsed": 22,
+    "yearsExperience": 4,
+    "vehiclesDeployed": "100K+"
+  }
+} 

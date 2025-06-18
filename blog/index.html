@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog posts about automotive software development, Android Automotive OS, embedded systems, and technology insights.">
+    <meta name="keywords" content="automotive blog, android automotive blog, embedded systems, technology blog">
+    <meta name="author" content="Abdullah Abdelhakeem">
+    
+    <title>Blog - Abdullah Abdelhakeem</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <span class="brand-text">Abdullah<span class="brand-accent">.</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#services" class="nav-link">Services</a>
+                <a href="../projects/" class="nav-link">Projects</a>
+                <a href="../podcasts/" class="nav-link">Podcasts</a>
+                <a href="./index.html" class="nav-link active">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero section">
+        <div class="container">
+            <div class="blog-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Blog</span>
+                </div>
+                
+                <div class="hero-main">
+                    <h1 class="hero-title">Technical Blog</h1>
+                    <p class="hero-subtitle">
+                        Insights, tutorials, and deep dives into automotive software development, 
+                        Android Automotive OS, embedded systems, and emerging technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon section">
+        <div class="container">
+            <div class="coming-soon-content">
+                <div class="coming-soon-icon">
+                    <i class="fas fa-blog"></i>
+                </div>
+                <h2>Blog Coming Soon</h2>
+                <p>
+                    I'm currently working on creating valuable content about automotive software development, 
+                    Android Automotive OS implementation, embedded systems design, and industry insights. 
+                    Stay tuned for technical articles, tutorials, and case studies.
+                </p>
+                
+                <div class="upcoming-topics">
+                    <h3>Upcoming Topics</h3>
+                    <div class="topics-grid">
+                        <div class="topic-card">
+                            <i class="fab fa-android"></i>
+                            <h4>Android Automotive Deep Dive</h4>
+                            <p>Comprehensive guide to AOSP customization for automotive applications</p>
+                        </div>
+                        <div class="topic-card">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Embedded Linux Optimization</h4>
+                            <p>Performance tuning and real-time optimization techniques</p>
+                        </div>
+                        <div class="topic-card">
+                            <i class="fas fa-car"></i>
+                            <h4>Vehicle Integration Patterns</h4>
+                            <p>Best practices for CAN bus integration and vehicle communication</p>
+                        </div>
+                        <div class="topic-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Automotive Security</h4>
+                            <p>Cybersecurity considerations for connected vehicles</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="newsletter-signup">
+                    <h3>Get Notified</h3>
+                    <p>Subscribe to be notified when new blog posts are published</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-bell"></i>
+                                Notify Me
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Content -->
+    <section class="alternative-content section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meanwhile, Check Out</h2>
+                <p class="section-subtitle">Other ways to learn about my work and expertise</p>
+            </div>
+            
+            <div class="alternatives-grid">
+                <div class="alternative-card">
+                    <div class="alternative-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <h3>Bit Pulse Podcasts</h3>
+                    <p>Listen to discussions about automotive technology, software development, and industry trends</p>
+                    <a href="../podcasts/" class="btn btn-outline">
+                        <i class="fas fa-play"></i>
+                        Listen Now
+                    </a>
+                </div>
+                
+                <div class="alternative-card featured">
+                    <div class="alternative-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Project Portfolio</h3>
+                    <p>Explore detailed case studies and technical implementations of automotive projects</p>
+                    <a href="../projects/" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        View Projects
+                    </a>
+                </div>
+                
+                <div class="alternative-card">
+                    <div class="alternative-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub Repository</h3>
+                    <p>Browse open-source code, examples, and contributions to automotive projects</p>
+                    <a href="https://github.com/abdullah6484" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abdullah Abdelhakeem</h3>
+                    <p>Senior Automotive Android Developer specializing in embedded systems and AOSP customization.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../projects/">Projects</a></li>
+                        <li><a href="../podcasts/">Podcasts</a></li>
+                        <li><a href="./index.html">Blog</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../services/automotive-android.html">Automotive Android</a></li>
+                        <li><a href="../services/embedded-linux.html">Embedded Linux</a></li>
+                        <li><a href="../services/embedded-qnx.html">Embedded QNX</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> abdullah.abdelhakeem25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201060178099</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Newsletter signup functionality
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletter-email').value;
+            const button = e.target.querySelector('button');
+            const originalText = button.innerHTML;
+            
+            // Show loading state
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+            button.disabled = true;
+            
+            // Simulate subscription process
+            setTimeout(() => {
+                // Show success message
+                button.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-success');
+                
+                // Reset form
+                document.getElementById('newsletter-email').value = '';
+                
+                // Show notification
+                showNotification('Thanks for subscribing! You\'ll be notified when new posts are published.', 'success');
+                
+                // Reset button after delay
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                    button.classList.remove('btn-success');
+                    button.classList.add('btn-primary');
+                }, 3000);
+            }, 1500);
+        });
+        
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check' : 'fa-info'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            // Add to page
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            // Remove after delay
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 5000);
+        }
+    </script>
+</body>
+</html> 

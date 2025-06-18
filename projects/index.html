@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive portfolio of automotive Android and embedded systems projects including AOSP customization, vehicle integration, and real-time systems.">
+    <meta name="keywords" content="automotive projects, android automotive projects, embedded systems portfolio, AOSP projects">
+    <meta name="author" content="Abdullah Abdelhakeem">
+    
+    <title>Projects Portfolio - Abdullah Abdelhakeem</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/temp-images.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <span class="brand-text">Abdullah<span class="brand-accent">.</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#services" class="nav-link">Services</a>
+                <a href="./index.html" class="nav-link active">Projects</a>
+                <a href="../podcasts/" class="nav-link">Podcasts</a>
+                <a href="../blog/" class="nav-link">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero section">
+        <div class="container">
+            <div class="projects-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Projects</span>
+                </div>
+                
+                <div class="hero-main">
+                    <h1 class="hero-title">Project Portfolio</h1>
+                    <p class="hero-subtitle">
+                        Innovative automotive software solutions and embedded systems implementations 
+                        showcasing expertise in Android Automotive, embedded Linux, and real-time systems.
+                    </p>
+                </div>
+                
+                <div class="projects-stats">
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Major Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">Vehicles Deployed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">22</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters & Search -->
+    <section class="projects-controls section">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="project-search">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="project-search" placeholder="Search projects by name, technology, or description...">
+                        <button type="button" id="clear-search" class="clear-search" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-layer-group"></i>
+                        All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="automotive">
+                        <i class="fas fa-car"></i>
+                        Automotive
+                    </button>
+                    <button class="filter-btn" data-filter="android">
+                        <i class="fab fa-android"></i>
+                        Android
+                    </button>
+                    <button class="filter-btn" data-filter="embedded">
+                        <i class="fas fa-microchip"></i>
+                        Embedded
+                    </button>
+                </div>
+                
+                <div class="sort-controls">
+                    <select id="sort-projects" class="sort-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+            
+            <!-- Loading State -->
+            <div class="loading-state" id="loading-state" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Loading projects...</p>
+            </div>
+            
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your search criteria or filter selection.</p>
+                <button class="btn btn-outline" onclick="clearAllFilters()">
+                    <i class="fas fa-refresh"></i>
+                    Clear Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology-overview section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Technologies and tools used across all projects</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Mobile Development</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Android Automotive OS</span>
+                        <span class="tech-tag">AOSP</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Jetpack Compose</span>
+                        <span class="tech-tag">Material Design</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Embedded Systems</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Embedded Linux</span>
+                        <span class="tech-tag">QNX RTOS</span>
+                        <span class="tech-tag">Real-time Systems</span>
+                        <span class="tech-tag">Device Drivers</span>
+                        <span class="tech-tag">Yocto Project</span>
+                        <span class="tech-tag">Buildroot</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Automotive Integration</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">CAN Bus</span>
+                        <span class="tech-tag">Vehicle HAL</span>
+                        <span class="tech-tag">OBD-II</span>
+                        <span class="tech-tag">UDS Protocol</span>
+                        <span class="tech-tag">AUTOSAR</span>
+                        <span class="tech-tag">Vehicle Property Manager</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C/C++</span>
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Shell Script</span>
+                        <span class="tech-tag">Assembly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics -->
+    <section class="project-statistics section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Impact</h2>
+                <p class="section-subtitle">Quantifying the reach and success of our automotive solutions</p>
+            </div>
+            
+            <div class="statistics-grid">
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="statistic-number">100,000+</div>
+                    <div class="statistic-label">Vehicles Deployed</div>
+                    <div class="statistic-description">Production deployments across multiple automotive platforms</div>
+                </div>
+                
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="statistic-number">500,000+</div>
+                    <div class="statistic-label">Lines of Code</div>
+                    <div class="statistic-description">Custom code written for automotive applications</div>
+                </div>
+                
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="statistic-number">< 5ms</div>
+                    <div class="statistic-label">Real-time Response</div>
+                    <div class="statistic-description">Worst-case response time for safety-critical systems</div>
+                </div>
+                
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="statistic-number">ASIL-D</div>
+                    <div class="statistic-label">Safety Compliance</div>
+                    <div class="statistic-description">Highest automotive safety integrity level achieved</div>
+                </div>
+                
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="statistic-number">50+</div>
+                    <div class="statistic-label">OEMs Supported</div>
+                    <div class="statistic-description">Different automotive manufacturers and suppliers</div>
+                </div>
+                
+                <div class="statistic-card">
+                    <div class="statistic-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="statistic-number">15+</div>
+                    <div class="statistic-label">Countries</div>
+                    <div class="statistic-description">Global deployment across different markets</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="projects-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Automotive Project?</h2>
+                <p>
+                    Let's discuss your automotive software requirements and create innovative solutions 
+                    that drive the future of connected and autonomous vehicles.
+                </p>
+                <div class="cta-actions">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-comments"></i>
+                        Start Discussion
+                    </a>
+                    <a href="../index.html#services" class="btn btn-outline">
+                        <i class="fas fa-cogs"></i>
+                        View Services
+                    </a>
+                    <a href="../podcasts/" class="btn btn-outline">
+                        <i class="fas fa-podcast"></i>
+                        Listen to Podcast
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abdullah Abdelhakeem</h3>
+                    <p>Senior Automotive Android Developer specializing in embedded systems and AOSP customization.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="./index.html">Projects</a></li>
+                        <li><a href="../podcasts/">Podcasts</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../services/automotive-android.html">Automotive Android</a></li>
+                        <li><a href="../services/embedded-linux.html">Embedded Linux</a></li>
+                        <li><a href="../services/embedded-qnx.html">Embedded QNX</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> abdullah.abdelhakeem25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201060178099</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
+    <script>
+        // Additional project page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize project search
+            const searchInput = document.getElementById('project-search');
+            const clearSearchBtn = document.getElementById('clear-search');
+            const sortSelect = document.getElementById('sort-projects');
+            
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value;
+                if (searchTerm.length > 0) {
+                    clearSearchBtn.style.display = 'block';
+                } else {
+                    clearSearchBtn.style.display = 'none';
+                }
+                
+                if (window.projectManager) {
+                    window.projectManager.handleSearch(searchTerm);
+                }
+            });
+            
+            clearSearchBtn.addEventListener('click', function() {
+                searchInput.value = '';
+                clearSearchBtn.style.display = 'none';
+                if (window.projectManager) {
+                    window.projectManager.handleSearch('');
+                }
+            });
+            
+            sortSelect.addEventListener('change', function(e) {
+                if (window.projectManager) {
+                    window.projectManager.sortProjects(e.target.value);
+                }
+            });
+        });
+        
+        function clearAllFilters() {
+            // Clear search
+            document.getElementById('project-search').value = '';
+            document.getElementById('clear-search').style.display = 'none';
+            
+            // Reset filter to "all"
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector('[data-filter="all"]').classList.add('active');
+            
+            // Reset sort
+            document.getElementById('sort-projects').value = 'newest';
+            
+            // Trigger project manager refresh
+            if (window.projectManager) {
+                window.projectManager.currentFilter = 'all';
+                window.projectManager.filterProjects('all');
+                window.projectManager.handleSearch('');
+            }
+        }
+    </script>
+</body>
+</html> 

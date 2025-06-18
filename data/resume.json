@@ -1,0 +1,318 @@
+{
+  "personalInfo": {
+    "name": "Abdullah Abdelhakeem",
+    "title": "Senior Automotive Android Developer",
+    "email": "abdullah.abdelhakeem25@gmail.com",
+    "phone": "+201060178099",
+    "location": "Cairo, Egypt",
+    "linkedin": "https://linkedin.com/in/abdullah-abdelhakeem",
+    "github": "https://github.com/abdullah6484",
+    "website": "https://abdullah-abdelhakeem.dev"
+  },
+  
+  "summary": "Experienced Senior Automotive Android Developer with 4+ years of expertise in AOSP customization, embedded systems, and vehicle integration. Proven track record of delivering production-ready automotive software solutions deployed in 100,000+ vehicles worldwide. Specialized in Android Automotive OS, embedded Linux, and real-time systems development.",
+  
+  "experience": [
+    {
+      "company": "HELLA-Forvia",
+      "position": "Senior Automotive Android Developer",
+      "location": "Cairo, Egypt",
+      "startDate": "2022-03",
+      "endDate": "Present",
+      "duration": "2+ years",
+      "description": "Leading automotive Android development initiatives for next-generation vehicle platforms",
+      "achievements": [
+        "Developed custom AOSP builds for automotive ECUs with 40% performance improvement",
+        "Implemented Vehicle HAL integration supporting 50+ vehicle parameters",
+        "Led team of 5 developers in delivering production-ready IVI systems",
+        "Achieved ISO 26262 ASIL-B compliance for safety-critical components",
+        "Reduced boot time from 45s to 12s through system optimization"
+      ],
+      "technologies": [
+        "Android Automotive OS",
+        "AOSP",
+        "Kotlin",
+        "C/C++",
+        "Vehicle HAL",
+        "CAN Bus",
+        "Linux Kernel"
+      ]
+    },
+    {
+      "company": "SEITech Solutions",
+      "position": "Android Developer",
+      "location": "Cairo, Egypt", 
+      "startDate": "2021-01",
+      "endDate": "2022-02",
+      "duration": "1 year 2 months",
+      "description": "Specialized in automotive Android applications and embedded system integration",
+      "achievements": [
+        "Developed real-time vehicle diagnostic applications",
+        "Implemented OBD-II protocol integration with 99.9% accuracy",
+        "Created custom UI components for automotive displays",
+        "Optimized memory usage by 35% for resource-constrained environments",
+        "Delivered 8 production applications for automotive clients"
+      ],
+      "technologies": [
+        "Android SDK",
+        "Java",
+        "Kotlin",
+        "OBD-II",
+        "Bluetooth LE",
+        "SQLite",
+        "Material Design"
+      ]
+    },
+    {
+      "company": "APTIV",
+      "position": "Embedded Software Engineer",
+      "location": "Cairo, Egypt",
+      "startDate": "2020-06",
+      "endDate": "2020-12",
+      "duration": "7 months",
+      "description": "Focused on embedded Linux development and automotive system integration",
+      "achievements": [
+        "Developed device drivers for automotive sensors",
+        "Implemented real-time data processing algorithms",
+        "Contributed to AUTOSAR-compliant software architecture",
+        "Achieved <5ms response time for safety-critical functions",
+        "Collaborated with international teams across 3 time zones"
+      ],
+      "technologies": [
+        "Embedded Linux",
+        "C/C++",
+        "Device Drivers",
+        "AUTOSAR",
+        "Real-time Systems",
+        "Git",
+        "JIRA"
+      ]
+    }
+  ],
+  
+  "education": [
+    {
+      "institution": "Cairo University",
+      "degree": "Bachelor of Engineering",
+      "field": "Computer Engineering",
+      "location": "Cairo, Egypt",
+      "startDate": "2016-09",
+      "endDate": "2020-06",
+      "gpa": "3.7/4.0",
+      "honors": "Magna Cum Laude",
+      "relevantCourses": [
+        "Embedded Systems Design",
+        "Real-time Operating Systems",
+        "Computer Architecture",
+        "Software Engineering",
+        "Digital Signal Processing",
+        "Computer Networks"
+      ],
+      "projects": [
+        "Autonomous Vehicle Navigation System (Final Year Project)",
+        "Real-time Traffic Management System",
+        "IoT-based Vehicle Monitoring Platform"
+      ]
+    }
+  ],
+  
+  "skills": {
+    "programming": [
+      {
+        "category": "Mobile Development",
+        "skills": [
+          { "name": "Android Automotive OS", "level": 95 },
+          { "name": "AOSP", "level": 90 },
+          { "name": "Kotlin", "level": 90 },
+          { "name": "Java", "level": 85 },
+          { "name": "Jetpack Compose", "level": 80 }
+        ]
+      },
+      {
+        "category": "Embedded Systems",
+        "skills": [
+          { "name": "Embedded Linux", "level": 90 },
+          { "name": "C/C++", "level": 95 },
+          { "name": "Device Drivers", "level": 85 },
+          { "name": "Real-time Systems", "level": 88 },
+          { "name": "QNX RTOS", "level": 75 }
+        ]
+      },
+      {
+        "category": "Automotive Technologies",
+        "skills": [
+          { "name": "CAN Bus", "level": 92 },
+          { "name": "Vehicle HAL", "level": 88 },
+          { "name": "OBD-II", "level": 85 },
+          { "name": "AUTOSAR", "level": 80 },
+          { "name": "UDS Protocol", "level": 78 }
+        ]
+      },
+      {
+        "category": "Other Languages",
+        "skills": [
+          { "name": "Python", "level": 80 },
+          { "name": "Rust", "level": 70 },
+          { "name": "JavaScript", "level": 75 },
+          { "name": "Shell Scripting", "level": 85 }
+        ]
+      }
+    ],
+    "tools": [
+      "Android Studio",
+      "Git/Gerrit",
+      "JIRA/Confluence",
+      "Jenkins CI/CD",
+      "Docker",
+      "Yocto Project",
+      "Buildroot",
+      "GDB Debugger",
+      "Oscilloscope",
+      "CAN Analyzer"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Project Management",
+      "Technical Documentation",
+      "Code Review",
+      "Mentoring",
+      "Cross-functional Collaboration",
+      "Problem Solving",
+      "Agile/Scrum"
+    ]
+  },
+  
+  "certifications": [
+    {
+      "name": "Android Automotive OS Certification",
+      "issuer": "Google",
+      "date": "2023-08",
+      "credentialId": "AAO-2023-AH-001",
+      "description": "Advanced certification in Android Automotive OS development and integration"
+    },
+    {
+      "name": "ISO 26262 Functional Safety",
+      "issuer": "TÜV SÜD",
+      "date": "2023-03",
+      "credentialId": "FS-26262-2023-045",
+      "description": "Certification in automotive functional safety standards and implementation"
+    },
+    {
+      "name": "Embedded Linux Development",
+      "issuer": "Linux Foundation",
+      "date": "2022-11",
+      "credentialId": "LF-ELD-2022-892",
+      "description": "Professional certification in embedded Linux system development"
+    }
+  ],
+  
+  "projects": [
+    {
+      "name": "AutoDash Pro",
+      "type": "Production System",
+      "duration": "6 months",
+      "team": "5 developers",
+      "description": "Real-time vehicle dashboard with advanced CAN bus integration",
+      "technologies": ["Android Automotive", "Kotlin", "CAN Bus", "Vehicle HAL"],
+      "achievements": [
+        "Deployed in 25,000+ vehicles",
+        "60fps UI performance",
+        "Sub-150MB memory usage",
+        "1000+ CAN messages/second processing"
+      ]
+    },
+    {
+      "name": "AutoIVI Pro",
+      "type": "Infotainment System",
+      "duration": "8 months", 
+      "team": "8 developers",
+      "description": "Complete in-vehicle infotainment system with multi-zone audio",
+      "technologies": ["AOSP", "C++", "Audio HAL", "Navigation APIs"],
+      "achievements": [
+        "4-zone audio system",
+        "Real-time navigation",
+        "Voice command integration",
+        "Production deployment in luxury vehicles"
+      ]
+    },
+    {
+      "name": "CustomTabletOS",
+      "type": "Custom OS",
+      "duration": "4 months",
+      "team": "3 developers", 
+      "description": "AOSP-based tablet operating system for automotive applications",
+      "technologies": ["AOSP", "Linux Kernel", "Custom Framework"],
+      "achievements": [
+        "15-second boot time",
+        "Custom automotive UI",
+        "Hardware-specific optimizations",
+        "OTA update system"
+      ]
+    }
+  ],
+  
+  "achievements": [
+    {
+      "title": "Production Deployment Excellence",
+      "description": "Successfully deployed automotive software in 100,000+ vehicles worldwide",
+      "year": "2024"
+    },
+    {
+      "title": "Performance Optimization Award",
+      "description": "Achieved 40% performance improvement in AOSP builds at HELLA-Forvia",
+      "year": "2023"
+    },
+    {
+      "title": "Innovation in Automotive Software",
+      "description": "Developed industry-first real-time CAN bus processing solution",
+      "year": "2023"
+    },
+    {
+      "title": "Team Leadership Recognition",
+      "description": "Led successful delivery of 5 major automotive projects",
+      "year": "2022"
+    }
+  ],
+  
+  "languages": [
+    {
+      "language": "Arabic",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English", 
+      "proficiency": "Fluent"
+    }
+  ],
+  
+  "interests": [
+    "Autonomous Vehicles",
+    "IoT and Connected Cars",
+    "Artificial Intelligence",
+    "Open Source Contribution",
+    "Technology Podcasting",
+    "Embedded Systems Innovation",
+    "Automotive Industry Trends"
+  ],
+  
+  "publications": [
+    {
+      "title": "Optimizing Android Automotive OS for Real-time Performance",
+      "type": "Technical Blog Post",
+      "date": "2024-01",
+      "url": "#",
+      "description": "Deep dive into AOSP optimization techniques for automotive applications"
+    },
+    {
+      "title": "CAN Bus Integration Patterns in Modern Vehicles",
+      "type": "Industry Article",
+      "date": "2023-09",
+      "url": "#",
+      "description": "Best practices for vehicle communication protocol implementation"
+    }
+  ],
+  
+  "references": "Available upon request",
+  
+  "lastUpdated": "2024-12-15"
+} 

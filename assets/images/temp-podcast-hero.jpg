@@ -1,0 +1,22 @@
+# Temporary Podcast Hero Image Placeholder
+# This is a placeholder for the Bit Pulse Podcast hero section
+# 
+# Recommended image specifications:
+# - Size: 1920x1080 pixels (hero banner)
+# - Format: JPG or PNG
+# - Content: Podcast studio, microphone, audio waveforms, or tech podcast branding
+# 
+# Replace this file with actual podcast branding images:
+# - Bit Pulse Podcast logo and branding
+# - Podcast studio setup photos
+# - Audio waveform visualizations
+# - Host photos and podcast artwork
+# 
+# For now, you can use a stock image from:
+# - Unsplash.com (search: "podcast microphone studio")
+# - Pexels.com (search: "audio recording technology")
+# - Or create Bit Pulse branded artwork
+
+# Temporary CSS background for development:
+# background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+# This creates a vibrant podcast-themed gradient background 

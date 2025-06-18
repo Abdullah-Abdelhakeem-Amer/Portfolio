@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bit Pulse Podcasts - Technical discussions on automotive software, embedded systems, and emerging technologies in automotive engineering.">
+    <meta name="keywords" content="bit pulse podcast, automotive software podcast, embedded systems podcast, automotive engineering, AOSP">
+    <meta name="author" content="Abdullah Abdelhakeem">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bit Pulse Podcasts - Automotive & Embedded Systems Discussions">
+    <meta property="og:description" content="In-depth technical discussions on automotive software development and embedded systems engineering.">
+    <meta property="og:image" content="../assets/images/bitpulse-podcast-cover.jpg">
+    <meta property="og:url" content="https://abdullah6484.github.io/automotive-portfolio/podcasts">
+    <meta property="og:type" content="website">
+    
+    <title>Bit Pulse Podcasts - Abdullah Abdelhakeem</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="brand-link">
+                    <span class="brand-text">Abdullah<span class="brand-accent">.</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#services" class="nav-link">Services</a>
+                <a href="../projects/" class="nav-link">Projects</a>
+                <a href="./index.html" class="nav-link active">Podcasts</a>
+                <a href="../blog/" class="nav-link">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Podcasts Hero -->
+    <section class="podcasts-hero section">
+        <div class="container">
+            <div class="podcasts-hero-content">
+                <div class="podcast-brand">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=200&h=200&fit=crop&crop=center" alt="Bit Pulse Podcast Logo" class="podcast-logo">
+                    <div class="podcast-info">
+                        <h1 class="podcast-title">Bit Pulse Podcasts</h1>
+                        <p class="podcast-tagline">Technical Insights into Automotive Software & Embedded Systems</p>
+                        <div class="podcast-stats">
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Episodes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5K+</span>
+                                <span class="stat-label">Listeners</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Countries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="podcast-description">
+                    <p>
+                        Welcome to <strong>Bit Pulse</strong> - where automotive technology meets in-depth technical discussions. 
+                        Join me as I explore the latest trends in automotive software development, embedded systems engineering, 
+                        and the future of connected vehicles.
+                    </p>
+                    <p>
+                        From AOSP customization to real-time systems, CAN bus protocols to automotive cybersecurity, 
+                        we dive deep into the technologies shaping the automotive industry.
+                    </p>
+                </div>
+                
+                <div class="podcast-subscribe">
+                    <h3>Subscribe & Listen</h3>
+                    <div class="subscribe-buttons">
+                        <a href="https://open.spotify.com/show/bitpulse" target="_blank" class="subscribe-btn spotify">
+                            <i class="fab fa-spotify"></i>
+                            <span>Spotify</span>
+                        </a>
+                        <a href="https://podcasts.apple.com/podcast/bitpulse" target="_blank" class="subscribe-btn apple">
+                            <i class="fas fa-podcast"></i>
+                            <span>Apple Podcasts</span>
+                        </a>
+                        <a href="https://podcasts.google.com/feed/bitpulse" target="_blank" class="subscribe-btn google">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Podcasts</span>
+                        </a>
+                        <a href="./rss.xml" target="_blank" class="subscribe-btn rss">
+                            <i class="fas fa-rss"></i>
+                            <span>RSS Feed</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Episode -->
+    <section class="featured-episode section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Episode</h2>
+                <p class="section-subtitle">Stay updated with our newest technical discussions</p>
+            </div>
+            
+            <div class="featured-episode-card">
+                <div class="episode-artwork">
+                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop&crop=center" alt="Episode 15 - AOSP Automotive Deep Dive">
+                    <button class="play-button" onclick="playEpisode('ep-15')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-meta">
+                        <span class="episode-number">Episode #15</span>
+                        <span class="episode-date">March 15, 2024</span>
+                        <span class="episode-duration">45:23</span>
+                    </div>
+                    <h3 class="episode-title">AOSP Automotive Deep Dive: Building Custom Vehicle Interfaces</h3>
+                    <p class="episode-description">
+                        In this comprehensive episode, we explore the intricacies of Android Automotive OS (AAOS) development. 
+                        From custom HAL implementations to vehicle property management, we cover everything you need to know 
+                        about building production-ready automotive interfaces.
+                    </p>
+                    <div class="episode-topics">
+                        <span class="topic-tag">AOSP</span>
+                        <span class="topic-tag">Android Automotive</span>
+                        <span class="topic-tag">Vehicle HAL</span>
+                        <span class="topic-tag">Custom UI</span>
+                    </div>
+                    <div class="episode-actions">
+                        <button class="btn btn-primary" onclick="playEpisode('ep-15')">
+                            <i class="fas fa-play"></i>
+                            Play Episode
+                        </button>
+                        <a href="https://open.spotify.com/episode/ep-15" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-spotify"></i>
+                            Listen on Spotify
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Audio Player -->
+            <div class="audio-player" id="audio-player" style="display: none;">
+                <div class="player-controls">
+                    <button class="control-btn" id="play-pause-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <span class="time-display" id="time-display">0:00 / 45:23</span>
+                    <button class="control-btn" id="volume-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="control-btn" id="close-player">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <audio id="audio-element" preload="none">
+                    <source src="../assets/audio/episodes/ep-15.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes List -->
+    <section class="episodes-list section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Episodes</h2>
+                <div class="episodes-filter">
+                    <button class="filter-btn active" data-filter="all">All Episodes</button>
+                    <button class="filter-btn" data-filter="automotive">Automotive</button>
+                    <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+                    <button class="filter-btn" data-filter="interviews">Interviews</button>
+                </div>
+            </div>
+            
+            <div class="episodes-grid" id="episodes-grid">
+                <!-- Episodes will be loaded dynamically -->
+            </div>
+            
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-episodes">
+                    <i class="fas fa-plus"></i>
+                    Load More Episodes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h2>Stay Updated</h2>
+                    <p>Get notified about new episodes, show notes, and exclusive technical content.</p>
+                    <ul class="newsletter-benefits">
+                        <li><i class="fas fa-check"></i> New episode notifications</li>
+                        <li><i class="fas fa-check"></i> Technical deep-dive articles</li>
+                        <li><i class="fas fa-check"></i> Industry insights and trends</li>
+                        <li><i class="fas fa-check"></i> Exclusive guest interviews</li>
+                    </ul>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="form-note">No spam, unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Host -->
+    <section class="host-section section">
+        <div class="container">
+            <div class="host-content">
+                <div class="host-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Abdullah Abdelhakeem - Podcast Host">
+                </div>
+                <div class="host-info">
+                    <h2>About Your Host</h2>
+                    <h3>Abdullah Abdelhakeem</h3>
+                    <p class="host-title">Senior Automotive Android Developer & Embedded Systems Engineer</p>
+                    <p class="host-description">
+                        With over 4 years of experience in automotive software development, Abdullah brings deep technical 
+                        expertise to every episode. Currently working as a Senior Embedded Android Engineer at HELLA-Forvia, 
+                        he specializes in AOSP customization, embedded Linux, and real-time systems for automotive applications.
+                    </p>
+                    <div class="host-expertise">
+                        <h4>Areas of Expertise:</h4>
+                        <div class="expertise-tags">
+                            <span class="expertise-tag">Android Automotive OS</span>
+                            <span class="expertise-tag">AOSP Customization</span>
+                            <span class="expertise-tag">Embedded Linux</span>
+                            <span class="expertise-tag">QNX RTOS</span>
+                            <span class="expertise-tag">CAN Bus Systems</span>
+                            <span class="expertise-tag">Automotive Cybersecurity</span>
+                        </div>
+                    </div>
+                    <div class="host-social">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bit Pulse Podcasts</h3>
+                    <p>Technical insights into automotive software development and embedded systems engineering.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="./rss.xml">RSS Feed</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Listen On</h4>
+                    <ul>
+                        <li><a href="https://open.spotify.com/show/bitpulse" target="_blank">Spotify</a></li>
+                        <li><a href="https://podcasts.apple.com/podcast/bitpulse" target="_blank">Apple Podcasts</a></li>
+                        <li><a href="https://podcasts.google.com/feed/bitpulse" target="_blank">Google Podcasts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> abdullah.abdelhakeem25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201060178099</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/podcasts.js"></script>
+</body>
+</html> 

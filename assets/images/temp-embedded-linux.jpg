@@ -1,0 +1,22 @@
+# Temporary Embedded Linux Image Placeholder
+# This is a placeholder for embedded linux service images
+# 
+# Recommended image specifications:
+# - Size: 1200x800 pixels
+# - Format: JPG or PNG
+# - Content: Linux terminal, embedded boards, Yocto build system, or real-time system graphs
+# 
+# Replace this file with actual embedded linux project images:
+# - Custom Linux distributions
+# - Embedded development boards
+# - Real-time performance graphs
+# - Yocto/Buildroot build environments
+# 
+# For now, you can use a stock image from:
+# - Unsplash.com (search: "linux terminal embedded")
+# - Pexels.com (search: "circuit board technology")
+# - Or create a graphic with Tux penguin + embedded elements
+
+# Temporary CSS background for development:
+# background: linear-gradient(135deg, #FCC624 0%, #000000 100%);
+# This creates a Linux-themed gradient background 

@@ -1,0 +1,22 @@
+# Temporary Automotive Android Image Placeholder
+# This is a placeholder for automotive android service images
+# 
+# Recommended image specifications:
+# - Size: 1200x800 pixels
+# - Format: JPG or PNG
+# - Content: Android logo with automotive elements, dashboard interface, or AOSP customization screenshots
+# 
+# Replace this file with actual automotive android project images:
+# - Custom AOSP builds
+# - Vehicle dashboard interfaces  
+# - Android Automotive OS screenshots
+# - Development environment setups
+# 
+# For now, you can use a stock image from:
+# - Unsplash.com (search: "automotive dashboard android")
+# - Pexels.com (search: "car technology android")
+# - Or create a simple graphic with Android + Car icons
+
+# Temporary CSS background for development:
+# background: linear-gradient(135deg, #3DDC84 0%, #1976D2 100%);
+# This creates an Android-themed gradient background 

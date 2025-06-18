@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies (if package.json exists)
+      run: |
+        if [ -f package.json ]; then
+          npm ci
+        fi
+        
+    - name: Build (if build script exists)
+      run: |
+        if [ -f package.json ] && npm run | grep -q "build"; then
+          npm run build
+        fi
+        
+    - name: Optimize images
+      run: |
+        # Install imagemin if images need optimization
+        # This is optional and can be added later
+        echo "Image optimization step - can be added later"
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./portfolio-website
+        cname: your-custom-domain.com  # Optional: replace with your domain 

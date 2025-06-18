@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Episode 001: The Future of Automotive Android - Exploring Android Automotive OS trends, AOSP customization, and the evolution of in-vehicle infotainment systems.">
+    <meta name="keywords" content="automotive android podcast, AOSP podcast, android automotive OS, bit pulse podcast">
+    <meta name="author" content="Abdullah Abdelhakeem">
+    
+    <title>Episode 001: The Future of Automotive Android - Bit Pulse Podcast</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/icons/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../index.html" class="brand-link">
+                    <span class="brand-text">Abdullah<span class="brand-accent">.</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../../index.html#home" class="nav-link">Home</a>
+                <a href="../../index.html#about" class="nav-link">About</a>
+                <a href="../../index.html#services" class="nav-link">Services</a>
+                <a href="../../projects/" class="nav-link">Projects</a>
+                <a href="../index.html" class="nav-link active">Podcasts</a>
+                <a href="../../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Episode Header -->
+    <section class="episode-header section">
+        <div class="container">
+            <div class="episode-header-content">
+                <div class="breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html">Podcasts</a>
+                    <span>/</span>
+                    <span>Episode 001</span>
+                </div>
+                
+                <div class="episode-info">
+                    <div class="episode-artwork">
+                        <img src="../../assets/images/podcast/episode-001-cover.jpg" alt="Episode 001 Cover Art">
+                        <div class="play-overlay">
+                            <button class="play-btn" id="main-play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="episode-details">
+                        <div class="episode-meta">
+                            <span class="episode-number">Episode 001</span>
+                            <span class="episode-date">December 15, 2024</span>
+                            <span class="episode-duration">45 minutes</span>
+                        </div>
+                        
+                        <h1 class="episode-title">The Future of Automotive Android</h1>
+                        <p class="episode-description">
+                            In this inaugural episode, we dive deep into the evolution of Android Automotive OS, 
+                            exploring current trends, challenges, and future opportunities in automotive software development. 
+                            From AOSP customization to vehicle integration patterns, we cover what's driving the industry forward.
+                        </p>
+                        
+                        <div class="episode-tags">
+                            <span class="tag">Android Automotive</span>
+                            <span class="tag">AOSP</span>
+                            <span class="tag">Vehicle Integration</span>
+                            <span class="tag">Future Tech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player -->
+    <section class="audio-player-section">
+        <div class="container">
+            <div class="audio-player" id="audio-player">
+                <audio id="episode-audio" preload="metadata">
+                    <source src="../../assets/audio/episode-001.mp3" type="audio/mpeg">
+                    <source src="../../assets/audio/episode-001.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                
+                <div class="player-controls">
+                    <button class="control-btn" id="play-pause-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    
+                    <div class="progress-container">
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-track" id="progress-track">
+                                <div class="progress-fill" id="progress-fill"></div>
+                                <div class="progress-handle" id="progress-handle"></div>
+                            </div>
+                        </div>
+                        <div class="time-display">
+                            <span id="total-time">45:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <button class="control-btn" id="volume-btn">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <div class="volume-slider">
+                            <input type="range" id="volume-range" min="0" max="100" value="80">
+                        </div>
+                    </div>
+                    
+                    <div class="playback-speed">
+                        <select id="speed-select">
+                            <option value="0.5">0.5x</option>
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Content -->
+    <section class="episode-content section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-section">
+                        <h2>Episode Highlights</h2>
+                        <ul class="highlights-list">
+                            <li>Current state of Android Automotive OS adoption across OEMs</li>
+                            <li>Key differences between Android Auto and Android Automotive OS</li>
+                            <li>AOSP customization strategies for automotive applications</li>
+                            <li>Vehicle integration challenges and solutions</li>
+                            <li>Performance optimization techniques for automotive hardware</li>
+                            <li>Security considerations in connected vehicles</li>
+                            <li>Future roadmap and emerging technologies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Key Topics Discussed</h2>
+                        <div class="topics-timeline">
+                            <div class="topic-item">
+                                <div class="topic-time">00:00</div>
+                                <div class="topic-content">
+                                    <h3>Introduction & Overview</h3>
+                                    <p>Setting the stage for automotive Android development</p>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <div class="topic-time">05:30</div>
+                                <div class="topic-content">
+                                    <h3>Android Automotive vs Android Auto</h3>
+                                    <p>Understanding the fundamental differences and use cases</p>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <div class="topic-time">12:15</div>
+                                <div class="topic-content">
+                                    <h3>AOSP Customization Deep Dive</h3>
+                                    <p>Framework modifications and system service development</p>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <div class="topic-time">22:45</div>
+                                <div class="topic-content">
+                                    <h3>Vehicle Integration Patterns</h3>
+                                    <p>CAN bus communication and Vehicle HAL implementation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <div class="topic-time">35:20</div>
+                                <div class="topic-content">
+                                    <h3>Future Trends & Predictions</h3>
+                                    <p>What's next for automotive software development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2>Resources Mentioned</h2>
+                        <div class="resources-list">
+                            <div class="resource-item">
+                                <i class="fas fa-link"></i>
+                                <div>
+                                    <h4>Android Automotive OS Documentation</h4>
+                                    <p>Official Google documentation for Android Automotive development</p>
+                                    <a href="https://source.android.com/devices/automotive" target="_blank">View Resource</a>
+                                </div>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4>AOSP Source Code</h4>
+                                    <p>Android Open Source Project repository</p>
+                                    <a href="https://android.googlesource.com/" target="_blank">View Resource</a>
+                                </div>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Vehicle HAL Interface</h4>
+                                    <p>Hardware Abstraction Layer specifications for automotive</p>
+                                    <a href="#" target="_blank">View Resource</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Episode Actions</h3>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary" id="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download Episode
+                            </button>
+                            <button class="btn btn-outline" id="share-btn">
+                                <i class="fas fa-share"></i>
+                                Share Episode
+                            </button>
+                            <button class="btn btn-outline" id="subscribe-btn">
+                                <i class="fas fa-rss"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Episode Stats</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Duration</span>
+                                <span class="stat-value">45:23</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">File Size</span>
+                                <span class="stat-value">65.2 MB</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Format</span>
+                                <span class="stat-value">MP3, 128kbps</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Published</span>
+                                <span class="stat-value">Dec 15, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Related Episodes</h3>
+                        <div class="related-episodes">
+                            <div class="related-episode">
+                                <div class="episode-thumb">
+                                    <img src="../../assets/images/podcast/episode-002-thumb.jpg" alt="Episode 002">
+                                </div>
+                                <div class="episode-info">
+                                    <h4>Episode 002</h4>
+                                    <p>Embedded Linux for Automotive</p>
+                                    <span class="episode-duration">38 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="related-episode">
+                                <div class="episode-thumb">
+                                    <img src="../../assets/images/podcast/episode-003-thumb.jpg" alt="Episode 003">
+                                </div>
+                                <div class="episode-info">
+                                    <h4>Episode 003</h4>
+                                    <p>QNX Real-time Systems</p>
+                                    <span class="episode-duration">42 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section section">
+        <div class="container">
+            <div class="comments-container">
+                <h2>Discussion</h2>
+                <p class="comments-note">
+                    Join the conversation! Share your thoughts about this episode and automotive Android development.
+                </p>
+                
+                <div class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <input type="text" id="comment-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="comment-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment-message" placeholder="Your thoughts on this episode..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-comment"></i>
+                            Post Comment
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="comments-placeholder">
+                    <i class="fas fa-comments"></i>
+                    <p>Be the first to comment on this episode!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abdullah Abdelhakeem</h3>
+                    <p>Senior Automotive Android Developer and host of Bit Pulse Podcast.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Podcast</h4>
+                    <ul>
+                        <li><a href="../index.html">All Episodes</a></li>
+                        <li><a href="../index.html#subscribe">Subscribe</a></li>
+                        <li><a href="../index.html#about">About the Show</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../projects/">Projects</a></li>
+                        <li><a href="../../index.html#services">Services</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> abdullah.abdelhakeem25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201060178099</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Audio player functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('episode-audio');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const mainPlayBtn = document.getElementById('main-play-btn');
+            const progressTrack = document.getElementById('progress-track');
+            const progressFill = document.getElementById('progress-fill');
+            const progressHandle = document.getElementById('progress-handle');
+            const currentTimeSpan = document.getElementById('current-time');
+            const totalTimeSpan = document.getElementById('total-time');
+            const volumeBtn = document.getElementById('volume-btn');
+            const volumeRange = document.getElementById('volume-range');
+            const speedSelect = document.getElementById('speed-select');
+            
+            let isPlaying = false;
+            let isDragging = false;
+            
+            // Play/Pause functionality
+            function togglePlayPause() {
+                if (isPlaying) {
+                    audio.pause();
+                    playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    mainPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    isPlaying = false;
+                } else {
+                    audio.play();
+                    playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    mainPlayBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    isPlaying = true;
+                }
+            }
+            
+            playPauseBtn.addEventListener('click', togglePlayPause);
+            mainPlayBtn.addEventListener('click', togglePlayPause);
+            
+            // Progress bar functionality
+            audio.addEventListener('timeupdate', function() {
+                if (!isDragging) {
+                    const progress = (audio.currentTime / audio.duration) * 100;
+                    progressFill.style.width = progress + '%';
+                    progressHandle.style.left = progress + '%';
+                    currentTimeSpan.textContent = formatTime(audio.currentTime);
+                }
+            });
+            
+            audio.addEventListener('loadedmetadata', function() {
+                totalTimeSpan.textContent = formatTime(audio.duration);
+            });
+            
+            // Progress bar interaction
+            progressTrack.addEventListener('click', function(e) {
+                const rect = progressTrack.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const progress = clickX / rect.width;
+                audio.currentTime = progress * audio.duration;
+            });
+            
+            // Volume control
+            volumeRange.addEventListener('input', function() {
+                audio.volume = this.value / 100;
+                updateVolumeIcon();
+            });
+            
+            volumeBtn.addEventListener('click', function() {
+                if (audio.volume > 0) {
+                    audio.volume = 0;
+                    volumeRange.value = 0;
+                } else {
+                    audio.volume = 0.8;
+                    volumeRange.value = 80;
+                }
+                updateVolumeIcon();
+            });
+            
+            function updateVolumeIcon() {
+                const volume = audio.volume;
+                let icon = 'fa-volume-up';
+                if (volume === 0) icon = 'fa-volume-mute';
+                else if (volume < 0.5) icon = 'fa-volume-down';
+                
+                volumeBtn.innerHTML = `<i class="fas ${icon}"></i>`;
+            }
+            
+            // Playback speed
+            speedSelect.addEventListener('change', function() {
+                audio.playbackRate = parseFloat(this.value);
+            });
+            
+            // Format time helper
+            function formatTime(seconds) {
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = Math.floor(seconds % 60);
+                return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+            }
+            
+            // Initialize volume
+            audio.volume = 0.8;
+            updateVolumeIcon();
+        });
+        
+        // Comment form functionality
+        document.getElementById('comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('comment-name').value;
+            const email = document.getElementById('comment-email').value;
+            const message = document.getElementById('comment-message').value;
+            
+            // Simulate comment submission
+            const button = e.target.querySelector('button');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Posting...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.innerHTML = '<i class="fas fa-check"></i> Posted!';
+                
+                // Reset form
+                this.reset();
+                
+                // Show success message
+                showNotification('Thank you for your comment! It will be reviewed and published soon.', 'success');
+                
+                // Reset button
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+        
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check' : 'fa-info'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 5000);
+        }
+    </script>
+</body>
+</html> 

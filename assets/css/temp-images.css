@@ -1,0 +1,304 @@
+/* ==========================================================================
+   TEMPORARY IMAGE PLACEHOLDERS
+   These styles provide fallback backgrounds until real images are added
+   ========================================================================== */
+
+/* Service Page Hero Backgrounds */
+.service-hero.automotive-android {
+    background: linear-gradient(135deg, #3DDC84 0%, #1976D2 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.service-hero.automotive-android::before {
+    content: '\f17b';
+    font-family: 'Font Awesome 6 Brands';
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.service-hero.embedded-linux {
+    background: linear-gradient(135deg, #FCC624 0%, #000000 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.service-hero.embedded-linux::before {
+    content: '\f17c';
+    font-family: 'Font Awesome 6 Brands';
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.service-hero.qnx-systems {
+    background: linear-gradient(135deg, #0066CC 0%, #003366 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.service-hero.qnx-systems::before {
+    content: '\f2db';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Projects Page Hero */
+.projects-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.projects-hero::before {
+    content: '\f07b';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Podcast Page Hero */
+.podcast-hero {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.podcast-hero::before {
+    content: '\f2ce';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Blog Page Hero */
+.blog-hero {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.blog-hero::before {
+    content: '\f781';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Episode Header Backgrounds */
+.episode-header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    color: white;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure content is above background icons */
+.service-hero-content,
+.projects-hero-content,
+.podcast-hero-content,
+.blog-hero-content,
+.episode-header-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Placeholder Images for Missing Assets */
+img[src*="temp-"],
+img[src*="placeholder"] {
+    background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 2rem;
+    min-height: 200px;
+    border-radius: 8px;
+}
+
+/* Project Card Placeholders */
+.project-card img[src*="temp-"],
+.project-card img[src*="placeholder"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+.project-card img[src*="temp-"]::before,
+.project-card img[src*="placeholder"]::before {
+    content: '\f1c0';
+}
+
+/* Episode Artwork Placeholders */
+.episode-artwork img[src*="temp-"],
+.episode-artwork img[src*="placeholder"] {
+    background: radial-gradient(circle, #ff6b6b 0%, #4ecdc4 100%);
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+.episode-artwork img[src*="temp-"]::before,
+.episode-artwork img[src*="placeholder"]::before {
+    content: '\f2ce';
+}
+
+/* Profile Image Placeholder */
+.profile-image[src*="temp-"],
+.profile-image[src*="placeholder"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    border-radius: 50%;
+}
+
+.profile-image[src*="temp-"]::before,
+.profile-image[src*="placeholder"]::before {
+    content: '\f007';
+    font-size: 4rem;
+}
+
+/* Case Study Images */
+.case-study-image img[src*="temp-"],
+.case-study-image img[src*="placeholder"] {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+.case-study-image img[src*="temp-"]::before,
+.case-study-image img[src*="placeholder"]::before {
+    content: '\f200';
+}
+
+/* Related Episode Thumbnails */
+.related-episode img[src*="temp-"],
+.related-episode img[src*="placeholder"] {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    min-height: 80px;
+    border-radius: 4px;
+}
+
+.related-episode img[src*="temp-"]::before,
+.related-episode img[src*="placeholder"]::before {
+    content: '\f2ce';
+    font-size: 1.5rem;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+img[src*="temp-"],
+img[src*="placeholder"] {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service-hero::before,
+    .projects-hero::before,
+    .podcast-hero::before,
+    .blog-hero::before {
+        font-size: 4rem;
+        right: 5%;
+    }
+    
+    .service-hero,
+    .projects-hero,
+    .podcast-hero,
+    .blog-hero,
+    .episode-header {
+        min-height: 300px;
+    }
+    
+    img[src*="temp-"],
+    img[src*="placeholder"] {
+        min-height: 150px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-hero::before,
+    .projects-hero::before,
+    .podcast-hero::before,
+    .blog-hero::before {
+        font-size: 3rem;
+    }
+    
+    .service-hero,
+    .projects-hero,
+    .podcast-hero,
+    .blog-hero,
+    .episode-header {
+        min-height: 250px;
+    }
+} 
