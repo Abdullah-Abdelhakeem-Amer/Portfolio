@@ -118,9 +118,62 @@ class ProjectManager {
             const matchesSearch = 
                 project.title.toLowerCase().includes(lowercaseSearch) ||
                 project.description.toLowerCase().includes(lowercaseSearch) ||
-                project.technologies.some(tech => tech.toLowerCase().includes(lowercaseSearch));
+                project.technologies.some(tech => tech.toLowerCase().includes(lowercaseSearch)) ||
+                (project.role && project.role.toLowerCase().includes(lowercaseSearch));
             
-            const matchesFilter = this.currentFilter === 'all' || project.category === this.currentFilter;
+            // Use the same technology-based filtering logic
+            let matchesFilter = true;
+            if (this.currentFilter !== 'all') {
+                const techStack = project.technologies.map(t => t.toLowerCase());
+                
+                switch(this.currentFilter) {
+                    case 'android-automotive':
+                        matchesFilter = techStack.some(tech => 
+                            tech.includes('android automotive') || 
+                            tech.includes('aosp') ||
+                            tech.includes('aaos')
+                        ) || project.category === 'android';
+                        break;
+                        
+                    case 'embedded-linux':
+                        matchesFilter = techStack.some(tech => 
+                            tech.includes('embedded linux') || 
+                            tech.includes('linux kernel') ||
+                            tech.includes('yocto') ||
+                            tech.includes('buildroot')
+                        ) || project.category === 'embedded';
+                        break;
+                        
+                    case 'cpp':
+                        matchesFilter = techStack.some(tech => 
+                            tech.includes('c++') || 
+                            tech.includes('c/c++') ||
+                            tech === 'cpp'
+                        );
+                        break;
+                        
+                    case 'ai-ml':
+                        matchesFilter = techStack.some(tech => 
+                            tech.includes('pytorch') ||
+                            tech.includes('tensorflow') ||
+                            tech.includes('llm') ||
+                            tech.includes('langchain') ||
+                            tech.includes('rag') ||
+                            tech.includes('ai agent') ||
+                            tech.includes('machine learning') ||
+                            tech.includes('computer vision') ||
+                            tech.includes('opencv') ||
+                            tech.includes('yolo') ||
+                            tech.includes('gan') ||
+                            tech.includes('diffusion') ||
+                            tech.includes('huggingface')
+                        ) || project.category === 'ai';
+                        break;
+                        
+                    default:
+                        matchesFilter = project.category === this.currentFilter;
+                }
+            }
             
             return matchesSearch && matchesFilter;
         });
@@ -132,9 +185,59 @@ class ProjectManager {
         if (filter === 'all') {
             this.filteredProjects = [...this.projects];
         } else {
-            this.filteredProjects = this.projects.filter(project => 
-                project.category === filter
-            );
+            // Technology-based filtering
+            this.filteredProjects = this.projects.filter(project => {
+                const techStack = project.technologies.map(t => t.toLowerCase());
+                
+                switch(filter) {
+                    case 'android-automotive':
+                        // Match Android Automotive OS, AOSP, or Android Automotive in technologies
+                        return techStack.some(tech => 
+                            tech.includes('android automotive') || 
+                            tech.includes('aosp') ||
+                            tech.includes('aaos')
+                        ) || project.category === 'android';
+                        
+                    case 'embedded-linux':
+                        // Match Embedded Linux, Linux Kernel, Yocto, etc.
+                        return techStack.some(tech => 
+                            tech.includes('embedded linux') || 
+                            tech.includes('linux kernel') ||
+                            tech.includes('yocto') ||
+                            tech.includes('buildroot')
+                        ) || project.category === 'embedded';
+                        
+                    case 'cpp':
+                        // Match C++, C/C++, C++14/17/20
+                        return techStack.some(tech => 
+                            tech.includes('c++') || 
+                            tech.includes('c/c++') ||
+                            tech === 'cpp'
+                        );
+                        
+                    case 'ai-ml':
+                        // Match AI/ML related technologies
+                        return techStack.some(tech => 
+                            tech.includes('pytorch') ||
+                            tech.includes('tensorflow') ||
+                            tech.includes('llm') ||
+                            tech.includes('langchain') ||
+                            tech.includes('rag') ||
+                            tech.includes('ai agent') ||
+                            tech.includes('machine learning') ||
+                            tech.includes('computer vision') ||
+                            tech.includes('opencv') ||
+                            tech.includes('yolo') ||
+                            tech.includes('gan') ||
+                            tech.includes('diffusion') ||
+                            tech.includes('huggingface')
+                        ) || project.category === 'ai';
+                        
+                    default:
+                        // Fallback to category-based filtering
+                        return project.category === filter;
+                }
+            });
         }
         
         this.renderProjects();
@@ -208,23 +311,39 @@ class ProjectManager {
     createProjectLinks(project) {
         let links = '';
         
-        if (project.github) {
-            links += `<a href="${project.github}" target="_blank" rel="noopener noreferrer" aria-label="View Code" title="View Code">
-                <i class="fab fa-github"></i>
-            </a>`;
-        }
+        // View Code button (GitHub or placeholder)
+        const codeUrl = project.github || '#';
+        const codeLabel = project.github ? 'View Code on GitHub' : 'View Code (Coming Soon)';
+        const codeClass = project.github ? '' : 'placeholder-link';
+        links += `<a href="${codeUrl}" target="_blank" rel="noopener noreferrer" 
+                     aria-label="${codeLabel}" 
+                     title="${codeLabel}" 
+                     class="project-action-btn ${codeClass}"
+                     ${!project.github ? 'onclick="event.preventDefault(); alert(\'Repository link coming soon!\');"' : ''}>
+            <i class="fab fa-github"></i>
+        </a>`;
         
-        if (project.demo) {
-            links += `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" aria-label="View Demo" title="View Demo">
-                <i class="fas fa-external-link-alt"></i>
-            </a>`;
-        }
+        // Watch Demo button (YouTube or placeholder)
+        const demoUrl = project.youtube || project.demo || '#';
+        const demoLabel = (project.youtube || project.demo) ? 'Watch Demo' : 'Watch Demo (Coming Soon)';
+        const demoClass = (project.youtube || project.demo) ? '' : 'placeholder-link';
+        links += `<a href="${demoUrl}" target="_blank" rel="noopener noreferrer" 
+                     aria-label="${demoLabel}" 
+                     title="${demoLabel}" 
+                     class="project-action-btn ${demoClass}"
+                     ${!(project.youtube || project.demo) ? 'onclick="event.preventDefault(); alert(\'Demo video coming soon!\');"' : ''}>
+            <i class="fab fa-youtube"></i>
+        </a>`;
         
-        if (project.youtube) {
-            links += `<a href="${project.youtube}" target="_blank" rel="noopener noreferrer" aria-label="Watch Video" title="Watch Video">
-                <i class="fab fa-youtube"></i>
-            </a>`;
-        }
+        // LinkedIn button (always shown)
+        const linkedinUrl = project.linkedin || 'https://linkedin.com/in/abdullah-abdelhakeem';
+        const linkedinLabel = 'View on LinkedIn';
+        links += `<a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" 
+                     aria-label="${linkedinLabel}" 
+                     title="${linkedinLabel}" 
+                     class="project-action-btn">
+            <i class="fab fa-linkedin"></i>
+        </a>`;
 
         return links;
     }
@@ -307,15 +426,19 @@ class ProjectManager {
                             </div>
                             
                             <div class="project-actions-modal">
-                                ${project.github ? `<a href="${project.github}" target="_blank" class="btn btn-primary">
+                                ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="View Code on GitHub">
                                     <i class="fab fa-github"></i> View Code
-                                </a>` : ''}
-                                ${project.demo ? `<a href="${project.demo}" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>` : ''}
-                                ${project.youtube ? `<a href="${project.youtube}" target="_blank" class="btn btn-outline">
+                                </a>` : `<button class="btn btn-primary" disabled aria-label="View Code (Coming Soon)">
+                                    <i class="fab fa-github"></i> View Code (Pending)
+                                </button>`}
+                                ${(project.youtube || project.demo) ? `<a href="${project.youtube || project.demo}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Watch Demo">
                                     <i class="fab fa-youtube"></i> Watch Demo
-                                </a>` : ''}
+                                </a>` : `<button class="btn btn-secondary" disabled aria-label="Watch Demo (Coming Soon)">
+                                    <i class="fab fa-youtube"></i> Watch Demo (Pending)
+                                </button>`}
+                                <a href="${project.linkedin || 'https://linkedin.com/in/abdullah-abdelhakeem'}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View on LinkedIn">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
                             </div>
                         </div>
                     </div>

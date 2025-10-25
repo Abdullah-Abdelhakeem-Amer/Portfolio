@@ -265,14 +265,14 @@ function displayProjects(projects) {
     const projectsGrid = document.getElementById('projects-grid');
     
     projectsGrid.innerHTML = projects.map(project => `
-        <div class="project-card" data-category="${project.category}">
+        <div class="project-card" data-category="${project.category}" data-technologies="${(project.technologies || []).join('|')}">
             <div class="project-image">
                 <img src="${project.image}" alt="${project.title}" loading="lazy">
                 <div class="project-overlay">
                     <div class="project-links">
-                        ${project.demo ? `<a href="${project.demo}" target="_blank" aria-label="View Demo"><i class="fas fa-external-link-alt"></i></a>` : ''}
-                        ${project.github ? `<a href="${project.github}" target="_blank" aria-label="View Code"><i class="fab fa-github"></i></a>` : ''}
-                        ${project.youtube ? `<a href="${project.youtube}" target="_blank" aria-label="Watch Video"><i class="fab fa-youtube"></i></a>` : ''}
+                        ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" aria-label="View Demo"><i class="fas fa-external-link-alt"></i></a>` : ''}
+                        ${project.github ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer" aria-label="View Code"><i class="fab fa-github"></i></a>` : ''}
+                        ${project.youtube ? `<a href="${project.youtube}" target="_blank" rel="noopener noreferrer" aria-label="Watch Video"><i class="fab fa-youtube"></i></a>` : ''}
                     </div>
                 </div>
             </div>
@@ -323,8 +323,49 @@ function filterProjects(filter) {
     
     projectCards.forEach(card => {
         const category = card.getAttribute('data-category');
+        const technologies = (card.getAttribute('data-technologies') || '').toLowerCase();
+        let shouldShow = false;
         
-        if (filter === 'all' || category === filter) {
+        if (filter === 'all') {
+            shouldShow = true;
+        } else if (filter === 'android-automotive') {
+            // Match Android Automotive OS, AOSP, or AAOS
+            shouldShow = technologies.includes('android automotive') || 
+                        technologies.includes('aosp') ||
+                        technologies.includes('aaos') ||
+                        category === 'android';
+        } else if (filter === 'embedded-linux') {
+            // Match Embedded Linux, Linux Kernel, Yocto, etc.
+            shouldShow = technologies.includes('embedded linux') || 
+                        technologies.includes('linux kernel') ||
+                        technologies.includes('yocto') ||
+                        technologies.includes('buildroot') ||
+                        category === 'embedded';
+        } else if (filter === 'cpp') {
+            // Match C++, C/C++
+            shouldShow = technologies.includes('c++') || 
+                        technologies.includes('c/c++');
+        } else if (filter === 'ai-ml') {
+            // Match AI/ML related technologies
+            shouldShow = technologies.includes('pytorch') ||
+                        technologies.includes('tensorflow') ||
+                        technologies.includes('llm') ||
+                        technologies.includes('langchain') ||
+                        technologies.includes('rag') ||
+                        technologies.includes('machine learning') ||
+                        technologies.includes('computer vision') ||
+                        technologies.includes('opencv') ||
+                        technologies.includes('yolo') ||
+                        technologies.includes('gan') ||
+                        technologies.includes('diffusion') ||
+                        technologies.includes('huggingface') ||
+                        category === 'ai';
+        } else {
+            // Fallback to category-based filtering
+            shouldShow = category === filter;
+        }
+        
+        if (shouldShow) {
             card.style.display = 'block';
             card.style.animation = 'fadeInUp 0.5s ease-out';
         } else {

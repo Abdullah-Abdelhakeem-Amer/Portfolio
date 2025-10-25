@@ -37,7 +37,7 @@ This portfolio showcases my expertise as a Senior Automotive Android Developer w
 
 2. **Serve locally**
    ```bash
-   python -m http.server 8000
+   python3 -m http.server 8000
    ```
 
 3. **Open in browser**

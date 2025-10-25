@@ -38,6 +38,20 @@
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Testimonials Styles -->
+    <style>
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -53,8 +67,11 @@
                 <a href="#home" class="nav-link active" data-section="home">Home</a>
                 <a href="#about" class="nav-link" data-section="about">About</a>
                 <a href="#services" class="nav-link" data-section="services">Services</a>
-                <a href="./projects/" class="nav-link">Projects</a>
-                <a href="./podcasts/" class="nav-link">Podcasts</a>
+                <a href="#projects" class="nav-link" data-section="projects">Featured Projects</a>
+                <a href="#profiles" class="nav-link" data-section="profiles">Profiles</a>
+                <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+                <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+                <a href="./startups/" class="nav-link">Startups</a>
                 <a href="./blog/" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link" data-section="contact">Contact</a>
             </div>
@@ -78,12 +95,12 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Senior Automotive<br>
-                        <span class="title-accent">Android Developer</span>
+                        Embedded Linux<br>
+                        <span class="title-accent">Android AOSP</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Specializing in <strong>AOSP customization</strong>, <strong>embedded systems</strong>, 
-                        and <strong>automotive software solutions</strong>. Transforming vehicles into 
+                        Specializing in <strong> Android Automotive - AOSP customization</strong>, <strong>Embedded Linux</strong>, 
+                        and <strong>automotive software solutions,CPP, Probem Solving and System Design</strong>. Transforming vehicles into 
                         intelligent, connected platforms.
                     </p>
                     <div class="hero-stats">
@@ -92,26 +109,34 @@
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">8</span>
+                            <span class="stat-number">34+</span>
                             <span class="stat-label">Major Projects</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">100K+</span>
+                            <span class="stat-number">10+</span>
                             <span class="stat-label">Vehicles Deployed</span>
                         </div>
                     </div>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
+                        <a href="https://calendly.com/abdullah-abdelhakeem/personal-meeting" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i>
+                            Schedule Meeting
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1ui2Lp63R8HOTX0GH92CAB7IhKV8c7uSF?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fas fa-file-pdf"></i>
+                            View CV
+                        </a>
+                        <a href="https://www.youtube.com/@abdullahabdelhakeem2092/playlists" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-youtube"></i>
+                            YouTube Channel
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
                             <i class="fas fa-code"></i>
                             View Projects
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
+                        <a href="#contact" class="btn btn-outline">
                             <i class="fas fa-envelope"></i>
                             Get In Touch
-                        </a>
-                        <a href="./assets/files/Abdullah_Abdelhakeem_CV.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i>
-                            Download CV
                         </a>
                     </div>
                 </div>
@@ -125,8 +150,11 @@
                         <span class="tech-badge">AOSP</span>
                         <span class="tech-badge">Embedded Linux</span>
                         <span class="tech-badge">QNX</span>
-                        <span class="tech-badge">Kotlin</span>
                         <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Kotlin</span>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Rust</span>
                     </div>
                 </div>
             </div>
@@ -145,44 +173,162 @@
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">
-                    Passionate automotive software engineer with expertise in Android development and embedded systems
+                    Passionate automotive software engineer with expertise in Embedded Android - AOSP, Embedded Linux and CPP
                 </p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-description">
-                        I'm a Senior Automotive Android Developer with <strong>4+ years of specialized experience</strong> 
-                        in embedded systems and automotive software development. Currently working as a 
-                        <strong>Senior Embedded Android - AOSP Automotive Engineer</strong> at HELLA-Forvia, 
-                        I focus on creating innovative solutions for next-generation vehicles.
+                        I'm a <strong>Senior Embedded Software Engineer</strong> specializing in high-performance embedded systems 
+                        with expertise in <strong>Embedded Android (AOSP)</strong>, <strong>Embedded Linux (Yocto, Kernel, Device Drivers)</strong>, 
+                        and <strong>modern C++ (14/17/20)</strong>. Skilled in system design, problem-solving, and software architecture, 
+                        delivering optimized, secure, and reliable solutions. Passionate about Embedded Systems, AI, and Edge Intelligence, 
+                        leveraging LLMs and AI Agents for automation and autonomy.
                     </p>
                     
+                    <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 12px; border-left: 4px solid #3b82f6;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-graduation-cap"></i> Continuous Learning</h4>
+                        <p><strong>Information Technology Institute (ITI) — AI Professional Program (9 Months)</strong></p>
+                        <p>Highly competitive government-funded scholarship (7% acceptance rate) in collaboration with EPITA, France, 
+                        focusing on AI, Machine Learning, and Data Science. Achieved high model accuracy in AI projects; top 15% in EPITA 
+                        Kaggle competitions; noted for feature engineering and ML deployment.</p>
+                    </div>
+                    
+                    <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(16, 185, 129, 0.1); border-radius: 12px; border-left: 4px solid #10b981;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-trophy"></i> Key Achievements</h4>
+                        <ul style="margin: 0;">
+                            <li><strong>Hacktrick Hackathon (Dell, 2022)</strong>: 4th of 27 global professional teams in innovation and scalability</li>
+                            <li><strong>ITI AI/ML Scholarship (2021)</strong>: Top 7% of 7,000+ applicants in Egypt's national AI program</li>
+                            <li><strong>Kaggle Competitions</strong>: Top 15%, delivering high-accuracy, optimized models</li>
+                            <li><strong>Graduation Project (HTI, 2018)</strong>: Developed automated, human-free petrol refueling system</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 12px; border-left: 4px solid #a855f7;">
+                        <h4 style="margin-top: 0;"><i class="fas fa-rocket"></i> Career Vision</h4>
+                        <p>Driving innovation in Embedded Android/Linux systems with AI and LLM intelligence at the edge, 
+                        aiming to create secure, efficient, and adaptive solutions for automotive and industrial advancements.</p>
+                    </div>
+                    
+                    <!-- Professional Experience Timeline -->
+                    <div style="margin-top: 3rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-briefcase" style="color: var(--primary-color);"></i> Professional Experience
+                        </h3>
+                    
                     <div class="experience-timeline">
+                            <!-- SEITech Solutions & T&S (Current) -->
                         <div class="timeline-item">
-                            <div class="timeline-date">2024-2025</div>
+                                <div class="timeline-date">Jan 2022 – Present</div>
                             <div class="timeline-content">
-                                <h4>Senior Embedded Android Engineer</h4>
-                                <span class="company">HELLA-Forvia</span>
-                                <p>Leading AOSP customization for automotive platforms, focusing on performance optimization and safety-critical systems.</p>
+                                    <h4>Embedded Android Engineer</h4>
+                                    <span class="company">SEITech Solutions & T&S</span>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0.5rem 0;"><i class="fas fa-building"></i> Clients: <strong>Bosch / BMW</strong></p>
+                                    <p>Android Automotive AOSP development for Infotainment, Navigation & Entertainment systems. Embedded Linux development using Yocto, Kernel Development, and Boot Optimization.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">AOSP</span>
+                                        <span style="display: inline-block; background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Embedded Linux</span>
+                                        <span style="display: inline-block; background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Yocto</span>
+                                        <span style="display: inline-block; background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Kernel Development</span>
+                                    </div>
                             </div>
                         </div>
                         
+                            <!-- HELLA (Porsche & VW) -->
                         <div class="timeline-item">
-                            <div class="timeline-date">2022-Present</div>
+                                <div class="timeline-date">Jan 2024 – May 2025</div>
                             <div class="timeline-content">
-                                <h4>Senior Embedded Software Engineer</h4>
-                                <span class="company">SEITech Solutions</span>
-                                <p>Developing embedded Linux solutions and real-time systems for automotive applications.</p>
+                                    <h4>Embedded C++ Software Engineer</h4>
+                                    <span class="company">HELLA</span>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0.5rem 0;"><i class="fas fa-car"></i> Clients: <strong>Porsche & Volkswagen</strong></p>
+                                    <p>Cybersecurity implementation on AUTOSAR-based embedded systems. Developed safety-critical automotive software with C++, focusing on secure communication and threat mitigation.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">C++</span>
+                                        <span style="display: inline-block; background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">AUTOSAR</span>
+                                        <span style="display: inline-block; background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Cybersecurity</span>
+                                        <span style="display: inline-block; background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">ISO 26262</span>
+                                    </div>
                             </div>
                         </div>
                         
+                            <!-- APTIV (Daimler) -->
                         <div class="timeline-item">
-                            <div class="timeline-date">2022-2024</div>
+                                <div class="timeline-date">Jul 2022 – Jun 2023</div>
                             <div class="timeline-content">
                                 <h4>Embedded Software Engineer</h4>
                                 <span class="company">APTIV</span>
-                                <p>Worked on AUTOSAR-compliant software and vehicle communication systems.</p>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0.5rem 0;"><i class="fas fa-car"></i> Client: <strong>Daimler</strong></p>
+                                    <p>Developed AUTOSAR-compliant embedded software and vehicle communication systems using Modern C++. Implemented complex automotive applications with focus on real-time performance and reliability.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">C++</span>
+                                        <span style="display: inline-block; background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">AUTOSAR</span>
+                                        <span style="display: inline-block; background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Real-time Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- IMT & ITI Instructor -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug 2018 – Oct 2021</div>
+                                <div class="timeline-content">
+                                    <h4>Embedded Software / Linux / C++ Instructor</h4>
+                                    <span class="company">IMT & ITI</span>
+                                    <p>Teaching and mentoring students in Embedded Systems, Linux programming, and Modern C++. Developed comprehensive curricula and hands-on lab exercises for professional training programs.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Training & Education</span>
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">C++</span>
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Embedded Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Senior Steps -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug 2018 – Feb 2019</div>
+                                <div class="timeline-content">
+                                    <h4>MEAN Stack Developer</h4>
+                                    <span class="company">Senior Steps</span>
+                                    <p>Web Development & Mobile Application development using MEAN stack (MongoDB, Express.js, Angular, Node.js). Built full-stack applications and RESTful APIs.</p>
+                                    <a href="https://drive.google.com/file/d/1ttxKUaM8BauAHd6vbIRtgCxdSxTbfyL3/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none; display: inline-block; margin-top: 0.5rem;">
+                                        <i class="fas fa-file-certificate"></i> View Certificate
+                                    </a>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">MEAN Stack</span>
+                                        <span style="display: inline-block; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Web Development</span>
+                                        <span style="display: inline-block; background: rgba(139, 92, 246, 0.1); color: #8b5cf6; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Mobile Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Robocon Competition -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">2016 – 2018</div>
+                                <div class="timeline-content">
+                                    <h4>Team Member & Developer</h4>
+                                    <span class="company">Robocon Competition</span>
+                                    <p>Participated in international robotics competition. Designed and programmed autonomous robots using embedded systems, sensors, and control algorithms.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(6, 182, 212, 0.1); color: #06b6d4; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Robotics</span>
+                                        <span style="display: inline-block; background: rgba(6, 182, 212, 0.1); color: #06b6d4; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Embedded Systems</span>
+                                        <span style="display: inline-block; background: rgba(6, 182, 212, 0.1); color: #06b6d4; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Competition</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- HTI Instructor -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">Oct 2014 – Apr 2016</div>
+                                <div class="timeline-content">
+                                    <h4>C/C++ Instructor</h4>
+                                    <span class="company">HTI (Higher Technological Institute)</span>
+                                    <p>Teaching fundamental and advanced C/C++ programming concepts. Mentored students in data structures, algorithms, and object-oriented programming principles.</p>
+                                    <div style="margin-top: 0.5rem;">
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Teaching</span>
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">C/C++</span>
+                                        <span style="display: inline-block; background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.5rem; margin-top: 0.25rem;">Programming</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,10 +336,13 @@
                     <div class="education">
                         <h3>Education</h3>
                         <div class="education-item">
-                            <strong>M.Sc. Artificial Intelligence</strong> - Cairo University (2021-2022)
+                            <strong>M.Sc. Artificial Intelligence</strong> Information Technology Institute ITI (2021-2022)
                         </div>
                         <div class="education-item">
-                            <strong>B.Sc. Mechatronics Engineering</strong> - Cairo University (2014-2018)
+                            <strong>B.Sc. Mechatronics Engineering</strong> - HTI University (2014-2018)
+                        </div>
+                        <div class="education-item">
+                            <strong>Secondary School - Mathematics and Programming</strong> (2011-2013)
                         </div>
                     </div>
                 </div>
@@ -202,7 +351,7 @@
                     <h3>Technical Skills</h3>
                     <div class="skills-grid">
                         <div class="skill-category">
-                            <h4><i class="fas fa-mobile-alt"></i> Mobile Development</h4>
+                            <h4><i class="fas fa-mobile-alt"></i> Android Automotive Development</h4>
                             <div class="skill-list">
                                 <div class="skill-item">
                                     <span class="skill-name">Android Automotive OS</span>
@@ -212,6 +361,24 @@
                                 </div>
                                 <div class="skill-item">
                                     <span class="skill-name">AOSP Customization</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Framework Customization</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">HAL Customization</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Kernel and Bootloader</span>
                                     <div class="skill-bar">
                                         <div class="skill-progress" data-progress="90"></div>
                                     </div>
@@ -241,7 +408,13 @@
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">AUTOSAR</span>
+                                    <span class="skill-name">Embedded C++</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Adaptive AUTOSAR</span>
                                     <div class="skill-bar">
                                         <div class="skill-progress" data-progress="80"></div>
                                     </div>
@@ -289,60 +462,119 @@
             </div>
             
             <div class="services-grid">
-                <div class="service-card">
+                <!-- C++ Development - PRIMARY EXPERTISE -->
+                <div class="service-card" style="border-top: 3px solid #3b82f6;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">CORE EXPERTISE</span>
+                    </div>
+                    <h3 class="service-title">Modern C++ Development (14/17/20)</h3>
+                    <p class="service-description">
+                        <strong>Expert-level C++ development</strong> for automotive embedded systems, 
+                        native services, and performance-critical applications. Multiple certifications in Modern C++ and Secure Coding.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Modern C++ (14/17/20) & STL</li>
+                        <li><i class="fas fa-check"></i> Embedded C++ & AUTOSAR</li>
+                        <li><i class="fas fa-check"></i> Native Android Services (JNI/NDK)</li>
+                        <li><i class="fas fa-check"></i> Performance & Memory Optimization</li>
+                        <li><i class="fas fa-check"></i> Safety-Critical Systems</li>
+                    </ul>
+                    <a href="./services/cpp-development.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Android Automotive AOSP - PRIMARY EXPERTISE -->
+                <div class="service-card" style="border-top: 3px solid #3b82f6;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <div class="service-icon">
                         <i class="fab fa-android"></i>
                     </div>
-                    <h3 class="service-title">Automotive Android</h3>
+                        <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">CORE EXPERTISE</span>
+                    </div>
+                    <h3 class="service-title">Android Automotive AOSP</h3>
                     <p class="service-description">
-                        Custom Android Automotive OS development, AOSP customization, 
-                        and vehicle integration solutions for modern automotive platforms.
+                        <strong>6+ months certified training</strong> in Android Automotive OS development, AOSP customization, 
+                        and vehicle integration. Multiple production-grade automotive projects delivered.
                     </p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> AOSP Customization</li>
-                        <li><i class="fas fa-check"></i> Vehicle Property Manager</li>
-                        <li><i class="fas fa-check"></i> CAN Bus Integration</li>
-                        <li><i class="fas fa-check"></i> Custom UI/UX Design</li>
+                        <li><i class="fas fa-check"></i> AOSP Framework Customization</li>
+                        <li><i class="fas fa-check"></i> Vehicle HAL Development</li>
+                        <li><i class="fas fa-check"></i> IVI System Integration</li>
+                        <li><i class="fas fa-check"></i> CAN Bus & Vehicle Property Manager</li>
+                        <li><i class="fas fa-check"></i> Custom ROM Building</li>
                     </ul>
                     <a href="./services/automotive-android.html" class="service-link">
                         Learn More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 
-                <div class="service-card">
+                <!-- Embedded Linux - PRIMARY EXPERTISE -->
+                <div class="service-card" style="border-top: 3px solid #3b82f6;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                     <div class="service-icon">
                         <i class="fab fa-linux"></i>
+                        </div>
+                        <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">CORE EXPERTISE</span>
                     </div>
                     <h3 class="service-title">Embedded Linux</h3>
                     <p class="service-description">
-                        Custom Linux distributions, kernel development, device drivers, 
-                        and real-time system optimization for automotive applications.
+                        <strong>6+ months diploma-certified</strong> in Embedded Linux development. 
+                        Expert in Yocto Project, Linux kernel development, device drivers, and real-time system optimization.
                     </p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Custom Linux Distributions</li>
-                        <li><i class="fas fa-check"></i> Kernel Customization</li>
+                        <li><i class="fas fa-check"></i> Yocto Project & BitBake</li>
+                        <li><i class="fas fa-check"></i> Linux Kernel Customization</li>
                         <li><i class="fas fa-check"></i> Device Driver Development</li>
-                        <li><i class="fas fa-check"></i> Real-time Optimization</li>
+                        <li><i class="fas fa-check"></i> Buildroot & Custom Distributions</li>
+                        <li><i class="fas fa-check"></i> Real-time Linux (PREEMPT_RT)</li>
                     </ul>
                     <a href="./services/embedded-linux.html" class="service-link">
                         Learn More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 
+                <!-- AI & Machine Learning -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">AI & Machine Learning</h3>
+                    <p class="service-description">
+                        <strong>AWS ML Specialty Certified.</strong> Advanced AI solutions including LLM development, 
+                        AI agents, RAG systems, edge AI, and embedded ML for automotive applications.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> LLMs & AI Agents (LangChain)</li>
+                        <li><i class="fas fa-check"></i> RAG Systems & Vector Search</li>
+                        <li><i class="fas fa-check"></i> Edge AI & Embedded ML</li>
+                        <li><i class="fas fa-check"></i> Computer Vision (OpenCV, YOLO)</li>
+                        <li><i class="fas fa-check"></i> AWS SageMaker & Cloud ML</li>
+                    </ul>
+                    <a href="./services/ai-machine-learning.html" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Embedded QNX -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3 class="service-title">Embedded QNX</h3>
                     <p class="service-description">
-                        Safety-critical real-time systems development using QNX RTOS 
-                        for automotive and industrial applications.
+                        <strong>QNX-certified.</strong> Safety-critical real-time systems development 
+                        using QNX RTOS for automotive and industrial applications.
                     </p>
                     <ul class="service-features">
+                        <li><i class="fas fa-check"></i> QNX Neutrino RTOS</li>
                         <li><i class="fas fa-check"></i> Real-time System Design</li>
-                        <li><i class="fas fa-check"></i> Safety-critical Applications</li>
                         <li><i class="fas fa-check"></i> ISO 26262 Compliance</li>
-                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check"></i> Safety-critical Applications</li>
+                        <li><i class="fas fa-check"></i> Microkernel Architecture</li>
                     </ul>
                     <a href="./services/embedded-qnx.html" class="service-link">
                         Learn More <i class="fas fa-arrow-right"></i>
@@ -364,9 +596,10 @@
             
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="automotive">Automotive</button>
-                <button class="filter-btn" data-filter="embedded">Embedded</button>
-                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="android-automotive">Android Automotive AOSP</button>
+                <button class="filter-btn" data-filter="embedded-linux">Embedded Linux</button>
+                <button class="filter-btn" data-filter="cpp">C++</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
             </div>
             
             <div class="projects-grid" id="projects-grid">
@@ -374,10 +607,554 @@
             </div>
             
             <div class="projects-cta">
-                <a href="./projects/" class="btn btn-primary">
-                    <i class="fas fa-folder-open"></i>
-                    View All Projects
+                <p style="text-align: center; margin-top: 1rem; color: var(--text-secondary); font-size: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    <i class="fas fa-info-circle" style="color: var(--primary-color);"></i> 
+                    <strong>Featured Projects Showcase</strong> — Use the filters above to explore projects by specific technologies. 
+                    Each project demonstrates expertise in Embedded Linux, Android AOSP, Modern C++, and AI/ML.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles" class="profiles section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Me</h2>
+                <p class="section-subtitle">
+                    Find me across various professional and coding platforms
+                </p>
+            </div>
+            
+            <div class="profiles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/abdullah-abdelhakeem-3b5338116/" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #0077B5;">
+                    <div style="font-size: 2rem; color: #0077B5;">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">LinkedIn</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Professional Network</p>
+                    </div>
                 </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/AbdullahAbdelhakeem6484" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #171515;">
+                    <div style="font-size: 2rem; color: #171515;">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">GitHub</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">80+ Repositories</p>
+                    </div>
+                </a>
+                
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@abdullahabdelhakeem2092/playlists" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #FF0000;">
+                    <div style="font-size: 2rem; color: #FF0000;">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">YouTube</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Tech Tutorials & Projects</p>
+                    </div>
+                </a>
+                
+                <!-- LeetCode -->
+                <a href="https://leetcode.com/u/AbdullahAbdelhakeem/" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #FFA116;">
+                    <div style="font-size: 2rem; color: #FFA116;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">LeetCode</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Coding Practice</p>
+                    </div>
+                </a>
+                
+                <!-- HackerRank -->
+                <a href="https://www.hackerrank.com/profile/abdullah_abdelh2" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #00EA64;">
+                    <div style="font-size: 2rem; color: #00EA64;">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">HackerRank</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Coding Challenges</p>
+                    </div>
+                </a>
+                
+                <!-- Medium -->
+                <a href="https://medium.com/@AbdullahAbdelhakeem22" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #000000;">
+                    <div style="font-size: 2rem; color: #000000;">
+                        <i class="fab fa-medium"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Medium</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Technical Blog</p>
+                    </div>
+                </a>
+                
+                <!-- Calendly -->
+                <a href="https://calendly.com/abdullah-abdelhakeem/personal-meeting" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #006BFF;">
+                    <div style="font-size: 2rem; color: #006BFF;">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Calendly</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Schedule Meeting</p>
+                    </div>
+                </a>
+                
+                <!-- Twitter/X -->
+                <a href="https://x.com/AbdullahAmer64" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #1DA1F2;">
+                    <div style="font-size: 2rem; color: #1DA1F2;">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Twitter / X</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">@AbdullahAmer64</p>
+                    </div>
+                </a>
+                
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/abdullah.abdelhakeem.2025/" target="_blank" rel="noopener noreferrer" class="profile-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 1rem; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; border-left: 4px solid #1877F2;">
+                    <div style="font-size: 2rem; color: #1877F2;">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Facebook</h4>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">Social Profile</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Learning</h2>
+                <p class="section-subtitle">
+                    Continuous professional development across Embedded Systems, C++, AI/ML, Cloud, and Cybersecurity
+                </p>
+            </div>
+            
+            <!-- Featured Certificates -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: var(--text-primary);">
+                    <i class="fas fa-star" style="color: #f59e0b;"></i> Highlighted Certifications
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <!-- Agile Software Development -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #0077B5;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-certificate" style="font-size: 1.5rem; color: #0077B5;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">Agile Software Development: Creating an Agile Culture</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">LinkedIn Learning</p>
+                                <a href="https://www.linkedin.com/learning/certificates/7d771995f23ff96efe676321fac0964f8a6ae811efe19710c33dcdd7b98247d9" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- System Design and Architecture -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #10b981;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-certificate" style="font-size: 1.5rem; color: #10b981;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">System Design and Architecture</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">Manara Tech</p>
+                                <a href="https://app.manara.tech/certificate/1760470801-D8D114375C3BD94F" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- QNX Real-time Programming -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #ef4444;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-certificate" style="font-size: 1.5rem; color: #ef4444;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">QNX Realtime Programming for the QNX OS</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">BlackBerry QNX</p>
+                                <a href="https://learning.qnx.com/qnx/certificates/NJmBperrENXk8xvd" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Cybersecurity -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #f59e0b;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: #f59e0b;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">Google Cybersecurity Specialization</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">Google / Coursera</p>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/J9K7IBQGWXBH" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Machine Learning Nanodegree -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #8b5cf6;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-brain" style="font-size: 1.5rem; color: #8b5cf6;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">Machine Learning Nanodegree</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">Udacity</p>
+                                <a href="https://www.udacity.com/certificate/TPHSJDMM" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AWS Machine Learning Specialty -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #FF9900;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fab fa-aws" style="font-size: 1.5rem; color: #FF9900;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">⭐ AWS Certified Machine Learning – Specialty</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);"><strong>Amazon Web Services (AWS)</strong></p>
+                                <a href="https://www.credly.com/badges/8eeceddf-5728-43ab-8e7a-4a772a00373b" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Self-Driving Cars Specialization -->
+                    <div class="cert-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 3px solid #06b6d4;">
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <i class="fas fa-car" style="font-size: 1.5rem; color: #06b6d4;"></i>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem;">Self-Driving Cars Specialization</h4>
+                                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; color: var(--text-secondary);">University of Toronto / Coursera</p>
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BCPCWUSZXSV9" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">
+                                    View Certificate <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate Categories -->
+                <div style="margin-top: 4rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <!-- C++ Certifications -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-code"></i> C++ Development
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-eb7f56ff-366b-48eb-bf7e-7588d807374c/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Mastering 4 critical SKILLS using C++ 17</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-042c4773-9da2-454b-a08d-e00343e11513/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Modern C++: From Intermediate to Advanced</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.linkedin.com/learning/certificates/c17fc55cd8630299dbcdbe6579720dc0325f110f9c452380272d5998120f71aa" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Nail Your C++ Interview</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.linkedin.com/learning/certificates/5425da4d6555f099d9a6487123bb3580c5e7f08d4f736d1e6016f8b34824c869" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Secure Coding in C++</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-40a1927e-4c92-4c93-b5b1-fced6cb6fc74/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Advanced C Programming</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.linkedin.com/learning/certificates/d8ee0b38daaab5c01ea636948b762fd335dba639f7c4c4fd89979bc36d4ee9eb" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Become a C++ Engineer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Embedded & Automotive -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-android"></i> Embedded & Automotive
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-0757ff22-9848-45b7-8abc-0cccb1cbf123/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Android OS Internals / AOSP Automotive ROM</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-0059eae9-6b92-46b6-9a60-4a9a90f0f019/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Visual Embedded Android (AOSP) with Drawings</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-84bc2a2a-1939-47ec-9bb3-4ff72a93c8a9/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Android OS Internals / AOSP Mobile ROM</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-537a31c1-77e5-438e-aac4-dede067ea7c0/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Kotlin From Zero to Hero</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-2cd4811c-bcdf-48a0-877f-ccf4b1459306/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Adaptive AUTOSAR Fundamentals</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.linkedin.com/learning/certificates/ce2c5f70ab432e87c0fc7459c03d1d230c35f0bc528a8bbc5658477dbc16f8cd" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Virtualization with KVM and Qemu</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/RRQG732SPNCP" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Embedded Software and Hardware Architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- AI & Machine Learning -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-brain"></i> AI & Machine Learning
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.linkedin.com/learning/certificates/0d087fd2257d4e75d619048a437e5c6dd6fe32ff3f5065dcb0edab154100e40e" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Become a Machine Learning Engineer</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-eb27d8d0-a9cb-4caa-8aa5-56019c29fdc2/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Building Recommender Systems with ML and AI</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/YRU3PDP6TUXR" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Microsoft Azure Machine Learning</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- AWS & Cloud -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-aws"></i> AWS & Cloud
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-star" style="position: absolute; left: 0; color: #FF9900; top: 4px;"></i>
+                                    <a href="https://www.credly.com/badges/8eeceddf-5728-43ab-8e7a-4a772a00373b" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none; font-weight: 600;">AWS Certified Machine Learning – Specialty</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.credly.com/badges/eb68bebf-5d98-4d67-858f-cb6b6ff12b61" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">AWS Academy ML Foundations</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.credly.com/badges/982076e6-3e52-48c1-b7a1-3394850a0715" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">AWS Academy Cloud Foundations</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=VT48iRSQMk-VNbcUCb24VQ2" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Big Data on AWS</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=am5QrFv3hkCFQHkLq93ceA2" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Practical Data Science with Amazon SageMaker</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/CLQP6LL6YFQD" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">DevOps, DataOps, MLOps</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Cybersecurity -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-shield-alt"></i> Cybersecurity
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udemy.com/certificate/UC-33183a7b-3dfc-484f-823d-981794333ef6/" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Cybersecurity - Automotive</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.udacity.com/certificate/e/1ffb8678-b7ba-11ef-ad5c-bfe1ffdb4cd8" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Foundation of Ethical Hacking</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Professional Development -->
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-user-tie"></i> Professional Skills
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://app.manara.tech/certificate/1760192180-9FFEC79408AAB751" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">How to Land a Job at a Global Tech Company</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://www.credly.com/badges/5bfe25a3-2715-4985-bbd9-3855d5e8b3e9/public_url" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">McKinsey.org Forward Program</a>
+                                </li>
+                                <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                                    <i class="fas fa-check" style="position: absolute; left: 0; color: #10b981; top: 4px;"></i>
+                                    <a href="https://drive.google.com/drive/folders/17n_4ABmuRI-zyjtmxOd5vY8YFXTlWq_A" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Competitive Programming</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View All Link -->
+                <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(59, 130, 246, 0.05); border-radius: 12px;">
+                    <p style="margin: 0 0 1rem 0; font-size: 1.1rem; color: var(--text-primary);">
+                        <i class="fas fa-graduation-cap" style="color: var(--primary-color);"></i> 
+                        <strong>View Complete Certification Portfolio</strong>
+                    </p>
+                    <a href="https://www.linkedin.com/in/abdullah-abdelhakeem-3b5338116/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-linkedin"></i> View All Certifications on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">
+                    What colleagues and managers say about working with me
+                </p>
+            </div>
+            
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/kassab.jfif" alt="Ahmed Kassab" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #3b82f6;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Ahmed Kassab</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Director of Product Development</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Direct Manager • April 2024</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #3b82f6; padding-left: 1rem;">
+                        "Abdullah is a strong researcher, he has a rare ability to learn a new skill & finish a task related to this skill in a record time. He is a very positive person which inspires the team around him. Would be my pleasure to work again with him."
+                    </p>
+                    <a href="https://www.linkedin.com/in/ahmed-kassab-5709aa1a/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/Sara.jfif" alt="Sara Elsaied" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #10b981;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Sara Elsaied</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Chief Software Architect | iSAQB - CPSA‑F®</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Senior Colleague • April 2024</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #10b981; padding-left: 1rem;">
+                        "I had a pleasure of working with Abdullah during the development of one of SEITech products. Abdulla has a great commitment, great skills to implement the complex technical solutions and a great problem solving skills."
+                    </p>
+                    <a href="https://www.linkedin.com/in/sara-elsaied-66508a1b6/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/Agata.jfif" alt="Agata Gruszczyk" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #f59e0b;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Agata Gruszczyk</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Engineering Team Manager</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Direct Manager • April 2023</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #f59e0b; padding-left: 1rem;">
+                        "Being a Scrum Master I have been working with Abdullah for the last few months. His commitment speed of completing tasks were very high. Working with him gave me the feeling that the tasks would be done reliably and on time. He is a mature and conscious employee who understands the assumptions of working in a self-organizing team."
+                    </p>
+                    <a href="https://www.linkedin.com/in/agata-gruszczyk-94b55111a/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/Loai.jfif" alt="Loay Esam Mohamed Hafez Shoman" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #8b5cf6;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Loay Esam Mohamed Hafez Shoman</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Test & Validation Engineer</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Team Member • December 2024</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #8b5cf6; padding-left: 1rem;">
+                        "I worked with Abdullah at Seitech and he shows very good commitment and high level in technical knowledge as well as his good ability to coach new team members, also he has great research skills and he is supportive with good communication skills."
+                    </p>
+                    <a href="https://www.linkedin.com/in/loay-esam-mohamed-hafez-shoman-58232675/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/Abdelfatah.jfif" alt="Muhammed Abdelfatah" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #06b6d4;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Muhammed Abdelfatah</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Ph.D. Candidate @ Polytechnique Montreal | AWS ML Specialist</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Team Member • April 2022</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #06b6d4; padding-left: 1rem;">
+                        "Abdallah is one of the smartest and hard working engineer I've had the pleasure to know and work with. We worked together in many projects during our internship in MCIT ITI's AI program where he delivered the most professional and functional work I've seen. I'd recommend Abdallah any day for any roles regarding AI or embedded systems."
+                    </p>
+                    <a href="https://www.linkedin.com/in/muhammed-abdelfatah-a45ab9104/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="./assets/images/Testimonials/sebaie.jfif" alt="Mohamed Sebaie" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 3px solid #14b8a6;">
+                        <div>
+                            <h4 style="margin: 0; color: #1e293b; font-size: 1.1rem;">Mohamed Sebaie</h4>
+                            <p style="margin: 0; color: #64748b; font-size: 0.9rem;">Senior AI Engineer | 2x AWS Certified</p>
+                            <p style="margin: 0; color: #94a3b8; font-size: 0.85rem;">Team Member • August 2021</p>
+                        </div>
+                    </div>
+                    <p style="color: #475569; line-height: 1.7; font-style: italic; border-left: 3px solid #14b8a6; padding-left: 1rem;">
+                        "We've worked together on several projects at ITI and Abdullah is one of the best people to have as a partner. I highly recommend him to any job, as he is creative, hands-on, and organized. His work ethic is immaculate and so easy to work together with. He goes out of his way when you ask for some help and guidance."
+                    </p>
+                    <a href="https://www.linkedin.com/in/mohamedsebaie/" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; margin-top: 0.5rem;">
+                        <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i> View on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- View All on LinkedIn -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://www.linkedin.com/in/abdullah-abdelhakeem-3b5338116/details/recommendations/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <i class="fab fa-linkedin"></i>
+                    View All Recommendations on LinkedIn
+                </a>
+                <p style="margin-top: 1rem; color: #64748b; font-size: 0.95rem;">
+                    <strong>11 recommendations</strong> from colleagues and managers
+                </p>
             </div>
         </div>
     </section>
@@ -420,7 +1197,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>LinkedIn</h4>
-                            <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank">LinkedIn Profile</a>
+                            <a href="https://www.linkedin.com/in/abdullah-abdelhakeem-3b5338116/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
                         </div>
                     </div>
                     
@@ -430,7 +1207,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>GitHub</h4>
-                            <a href="https://github.com/abdullah6484" target="_blank">GitHub Profile</a>
+                            <a href="https://github.com/AbdullahAbdelhakeem6484" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
                         </div>
                     </div>
                 </div>
@@ -473,10 +1250,10 @@
                     <h3>Abdullah Abdelhakeem</h3>
                     <p>Senior Automotive Android Developer specializing in embedded systems and AOSP customization.</p>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/abdullah-abdelhakeem" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/abdullah-abdelhakeem-3b5338116/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/abdullah6484" target="_blank" aria-label="GitHub">
+                        <a href="https://github.com/abdullah6484" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="mailto:abdullah.abdelhakeem25@gmail.com" aria-label="Email">
@@ -490,7 +1267,8 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#projects">Featured Projects</a></li>
+                        <li><a href="./startups/">Startups</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -501,6 +1279,7 @@
                         <li><a href="./services/automotive-android.html">Automotive Android</a></li>
                         <li><a href="./services/embedded-linux.html">Embedded Linux</a></li>
                         <li><a href="./services/embedded-qnx.html">Embedded QNX</a></li>
+                        <li><a href="./services/cpp-development.html">C++ Development</a></li>
                     </ul>
                 </div>
                 
@@ -512,7 +1291,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Abdullah Abdelhakeem. All rights reserved.</p>
+                <p>&copy; 2026 Abdullah Abdelhakeem. All rights reserved.</p>
             </div>
         </div>
     </footer>
