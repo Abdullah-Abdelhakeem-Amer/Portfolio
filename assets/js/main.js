@@ -127,18 +127,22 @@ function initializeSmoothScrolling() {
                 const navbarHeight = document.getElementById('navbar').offsetHeight;
                 const targetPosition = targetSection.offsetTop - navbarHeight;
                 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
+                // Close mobile menu if open and restore body scroll
                 const mobileMenu = document.getElementById('nav-menu');
                 const mobileToggle = document.getElementById('mobile-menu-toggle');
                 if (mobileMenu.classList.contains('active')) {
                     mobileMenu.classList.remove('active');
                     mobileToggle.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
+                
+                // Small delay to ensure menu is closed before scrolling
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 100);
             }
         });
     });
